@@ -8,7 +8,7 @@
         
         <link rel = "stylesheet" href="../css/reset.css" />
         <link rel = "stylesheet" href="../css/forindex.css"/>
-        
+
     </head>
     <body>
         <header id = "header">
@@ -16,12 +16,21 @@
                 <div class="image">
                     <img src = "../img/logo.png">
                 </div>
-                <div class="text title">
+                <div class="text title" style="color:white; font-weight: bold;">
                     BETIEPO
                 </div>
                 <div class="text summary">
                     채우기만 해도 완성되는 포트폴리오
                 </div>
+                <form action = "" method="POST" class="login">
+                    <label>학번</label>
+                    <input class='number' type="text" placeholder="학번을 입력해주세요" maxlength="4" required>
+                    <br>
+                    <label>이름</label>
+                    <input class='name' type="text" placeholder="이름을 입력해주세요" required>
+                    <br>
+                    <input type = "submit" value = "접속하기">
+                </form>
             </div>
         </header>
     </body>
