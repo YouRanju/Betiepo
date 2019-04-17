@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,900');
+
+/* layout */
+body { background-color: rgb(251, 185, 188); }
+#contents .container { border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
+
+/* container */
+.container { position: relative; width: 1200px; margin: 0 auto; }
+
+/* header */
+.image { position: relative; display: block; margin: auto; padding-top: 140px;  padding-bottom: 50px; width: 180px; 
+    transform: translateY(30px); transition-duration: 2s; }
+
+.title { display: block; font-size: 50px; font-weight: bold; color:white; }
+
+.summary { display: block; margin: auto; font-size: 15px; color: rgb(114, 97, 98);  }
+
+div { text-align: center; }
+
+/* mediaquery - width 320 / 480 / 600 / 768 / 960 / 1024 / 1280 */
+@media (max-width: 1280px) {
+    .container { width: 100%; }
+    #contents .container { border: 0; }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 600px) {
+
+}
+
+@media (max-width: 480px) {
+    .image { width: 120px;}
+}
+
+@media (max-width: 320px) {
+    .title { font-size: 30px;}
+    .summary { font-size: 9px; }
+}
+
+@media (max-height: 1024px) {
+    .image {  padding-top: 140px; }
+}
+
+@media (max-height: 670px) {
+    .image {  padding-top: 100px; }
+}
