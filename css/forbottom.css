@@ -9,4 +9,6 @@ body {}
 /* container */
 .container { position: relative; width: 1200px; margin: 0 auto; }
 
+.footerhr {  border: 0.5px solid lightgrey; }
+
 footer { width: 80%; margin: auto; }

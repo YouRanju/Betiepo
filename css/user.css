@@ -4,33 +4,18 @@
 .UserName li ul a { color: rgb(187, 165, 166); font-size: 14px; 
     padding: 10px 15px; display: inline-block; }
 
-.User ul {
-    margin: 0;
-    padding: 0;
-}
+.User ul { margin: 0; padding: 0; }
 
-.User ul li {
-    display: inline-block;
-}
+.User ul li { display: inline-block; }
 
-.User ul li:hover ul {
-    transition: all 0.3s ease-in-out; 
-    overflow: visible;
-    color: rgb(201,140,118);
-    transform: scaleY(1);
-}
+.User ul li:hover ul { transition: all 0.2s ease-in-out; 
+    overflow: visible; color: rgb(201,140,118); transform: scaleY(1); }
 
-.User ul li ul {
-    position: absolute;
-    width: 140px;
-    padding: auto;
-    transform: scaleY(0);
-}
+.User ul li ul { position: absolute; width: 140px;
+    padding: auto; transform: scaleY(0); }
 
-.User ul li ul li {
-    background-color: rgb(246,242,251);
-    display: block;
-}
+.User ul li ul li { background-color: rgb(246,242,251); display: block; }
 
 .User ul li ul li a { display: block; }
+
 .User ul li ul li:hover a { color: rgb(114, 107, 107); }
