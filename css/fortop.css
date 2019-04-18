@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,900');
+
+/* layout */
+body {}
+#contents .container { border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
+
+/* container */
+.container { position: relative; width: 1200px; margin: 0 auto; }
+
+/* header */
+.header { padding: 5px; background-color: rgb(251, 185, 188); 
+    position: relative; height: 60px; margin-bottom: 20px; }
+
+.logo { height: 60px; width: 38px; padding-left: 80px; padding-right: 20px;
+    float: left; }
+
+.title { margin: 5px; font-size:38px; font-weight: bold; color: white;
+    display: inline-block;}
+
+.title:hover { color: white;}
+
+.User { color : white; font-size: 2.4em; margin: 10px; margin-right: 140px; 
+     float: right; }
+
+.UserName { display: inline-block; font-size: 0.8em; margin-right: 10px; }
+
+.fa-chevron-down { font-size: 0.8em; }
+
+/* mediaquery - width 320 / 480 / 600 / 768 / 960 / 1024 / 1280 */
+@media (max-width: 1700px) {
+    .User { margin-right: 80px; }
+}
+
+@media (max-width: 1280px) {
+    .container { width: 100%; }
+    #contents .container { border: 0; }
+   
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (max-width: 960px) {
+    .User { margin: 10px; margin-right: 20px;}
+}
+
+@media (max-width: 768px) {
+    .header { padding: 3px; height: 48px; margin-bottom: 12px;}
+    .logo { height: 48px; width: 30px; padding-left: 30px;}
+    .title { margin: 3px; font-size: 30px; }
+    .User { margin: 5px; margin-right: 20px; font-size: 2em; }
+}
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 480px) {
+    .User>* { display : none; }
+    .User>.icon { display: inline-block; }
+}
+
+@media (max-width: 320px) {
+}
+
+@media (max-height: 1024px) {
+    
+}
+
+@media (max-height: 670px) {
+    
+}
