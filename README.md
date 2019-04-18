@@ -5,7 +5,7 @@
 Copyright TEAM BETIEPO
 
 - Develop :
-Ranju You
+Ranju You,
 Eunju Jeong
 
 - Design :
