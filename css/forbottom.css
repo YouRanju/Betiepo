@@ -8,3 +8,5 @@ body {}
 .footerhr {  border: 0.5px solid lightgrey; }
 
 footer { width: 80%; margin: auto; }
+
+footer>div { font-size: 8px; }
