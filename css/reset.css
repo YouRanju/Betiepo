@@ -5,7 +5,7 @@
 /* 여백 초기화 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button,figure,figcaption {margin:0;padding:0}
 
-body { min-width: 600px; }
+body { min-width: 700px; }
 
 /* 테두리 초기화 */
 fieldset,img{border:0 none}
