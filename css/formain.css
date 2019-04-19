@@ -16,3 +16,21 @@ input[class = "searchbutton"] { padding: 5px; width: 70px;
     border: 2px solid lightgray; 
     background-color: lightgray;
     border-radius: 4px; font-size: 15px; }
+
+.items { width: 1000px; height: 620px; padding: 0px 10%; }
+
+.create { width: 21%; margin: 30px; }
+    
+.project { padding: 4px; margin-bottom: 20px; line-height: 2.438571;
+        border: 0.5px solid rgb(251, 185, 188);
+        border-radius: 4px; }
+
+.explanation { padding: 0px 10px; font-size: 12px; }
+
+.itemlink { text-decoration: none; font-size: 24px; }
+.itemlink:link { color: rgb(148, 130, 131);}
+.itemlink:visited { color: rgb(148, 130, 131);}
+.itemlink:hover { color: rgb(148, 130, 131);}
+.itemlink:active { color: rgb(148, 130, 131);}
+    
+.date { margin: 5px 0 0 0; font-size : 12px; font-weight: bold;}
