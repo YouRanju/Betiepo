@@ -17,20 +17,80 @@ input[class = "searchbutton"] { padding: 5px; width: 70px;
     background-color: lightgray;
     border-radius: 4px; font-size: 15px; }
 
-.items { width: 1000px; height: 620px; padding: 0px 10%; }
+.items { width: 1000px; height: 620px; padding: 0px 11%;}
 
-.create { width: 21%; margin: 30px; }
+.create, .item { width: 21%; margin: 10px 15px; float: left; }
     
 .project { padding: 4px; margin-bottom: 20px; line-height: 2.438571;
         border: 0.5px solid rgb(251, 185, 188);
         border-radius: 4px; }
 
-.explanation { padding: 0px 10px; font-size: 12px; }
+.explanation { padding: 0px 10px; padding-right: 8px; font-size: 12px;  }
 
-.itemlink { text-decoration: none; font-size: 24px; }
+.explanation>p { overflow: hidden; text-overflow: ellipsis; 
+    white-space: nowrap; }
+
+.itemlink { text-decoration: none; font-size: 24px; font-weight: bold; }
 .itemlink:link { color: rgb(148, 130, 131);}
 .itemlink:visited { color: rgb(148, 130, 131);}
 .itemlink:hover { color: rgb(148, 130, 131);}
 .itemlink:active { color: rgb(148, 130, 131);}
     
 .date { margin: 5px 0 0 0; font-size : 12px; font-weight: bold;}
+
+/* mediaquery - width 320 / 480 / 600 / 768 / 960 / 1024 / 1280 */
+@media (max-width: 1280px) {
+    .container { width: 100%; }
+    #contents .container { border: 0; }
+}
+
+@media (max-width: 1024px) {
+    .maintitle h1 { font-size: 3.5em; font-weight: bold; }
+    input[class = "search"] { width: 200px; }
+}
+
+@media (max-width: 960px) {
+    .maintitle h1 { font-size: 3em; font-weight: bold; }
+    input[class = "search"] { width: 180px; }
+    input[class = "searchbutton"] { width: 50px; }
+}
+
+@media (max-width: 768px) {
+    .maintitle h1 { font-size: 2.7em; font-weight: bold; }
+    input[class = "search"] { font-size: 12px; }
+    input[class = "searchbutton"] { font-size: 12px; }
+}
+
+@media (max-width: 650px) {
+    .maintitle h1 { font-size: 2.4em; font-weight: bold; }
+    input[class = "search"] { width: 120px; font-size: 12px; }
+    input[class = "searchbutton"] { font-size: 12px; }
+
+    .items { width: 100%; padding: 0px 11%;}
+    .create, .item { width: 32%; margin: 10px 20px; float: left; }
+}
+
+/* only phone */
+/* 
+@media (max-width: 480px) {
+    .maintitle h1 { font-size: 1.8em; font-weight: bold; }
+
+    input[class = "search"] { width: 120px; padding: 3px; font-size: 8px;}
+    input[class = "searchbutton"] { padding: 3px; width: 40px;
+        font-size: 8px; }
+    
+    .items { height: 480px; padding: 0px 11%;}
+    .create, .item { width: 32%; margin: 10px 15px; float: left; }
+
+    .explanation { padding: 0px 10px; font-size: 8px; }
+    
+    .itemlink { text-decoration: none; font-size: 12px; font-weight: bold; }
+    .itemlink:link { color: rgb(148, 130, 131);}
+    .itemlink:visited { color: rgb(148, 130, 131);}
+    .itemlink:hover { color: rgb(148, 130, 131);}
+    .itemlink:active { color: rgb(148, 130, 131);}
+}
+
+@media (max-width: 360px) {
+    .items { height: 360px; padding: 0px 11%;}
+} */
