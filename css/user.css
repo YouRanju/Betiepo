@@ -8,11 +8,11 @@
 
 .User ul li { display: inline-block; }
 
-.User ul li:hover ul { transition: all 0.2s ease-in-out; 
-    overflow: visible; color: rgb(201,140,118); transform: scaleY(1); }
+#userBtn:checked ~ ul { transition: all 0.2s ease-in-out; display: block;
+    overflow: visible; color: rgb(201,140,118); }
 
 .User ul li ul { position: absolute; width: 140px;
-    padding: auto; transform: scaleY(0); }
+    display:none; padding: auto; }
 
 .User ul li ul li { background-color: rgb(246,242,251); display: block; }
 
