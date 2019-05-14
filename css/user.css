@@ -1,21 +1,13 @@
-.UserName a { color: white; font-size: 0.8em; padding: 10px 15px; 
-    display: inline-block; }
+/* 기본 */
+summary::-webkit-details-marker { display: none; }
+summary:focus { outline: none; }
 
-.UserName li ul a { color: rgb(187, 165, 166); font-size: 14px; 
-    padding: 10px 15px; display: inline-block; }
+/* 서브메뉴 */
+.userSub { display: block; padding: auto; 
+    width: 140px; color: rgb(201,140,118); }
 
-.User ul { margin: 0; padding: 0; }
+.userSub li { padding: 5px; 
+    background-color: rgb(246,242,251);
+    font-size: 14px; }
 
-.User ul li { display: inline-block; }
-
-#userBtn:checked ~ ul { transition: all 0.2s ease-in-out; display: block;
-    overflow: visible; color: rgb(201,140,118); }
-
-.User ul li ul { position: absolute; width: 140px;
-    display:none; padding: auto; }
-
-.User ul li ul li { background-color: rgb(246,242,251); display: block; }
-
-.User ul li ul li a { display: block; }
-
-.User ul li ul li:hover a { color: rgb(114, 107, 107); }
+.userSub li a { color: rgb(187, 165, 166); }
