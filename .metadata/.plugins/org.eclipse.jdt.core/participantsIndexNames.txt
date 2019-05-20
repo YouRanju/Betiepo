@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\MEMEME\Betiepo\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3475445041.index
+\Betiepo\src
+D:\MEMEME\Betiepo\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2324433492.index
+\Betiepo\src
