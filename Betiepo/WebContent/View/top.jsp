@@ -14,7 +14,7 @@
 </head>
 <body>
 	<header class="header">
-		<a class="title" href='../TemplateView/indexTemplate.jsp'>BETIEPO</a>
+		<a class="title" href='indexTemplate.jsp'>BETIEPO</a>
 		<div class="User">
 			<details>
 				<summary>
@@ -25,7 +25,7 @@
 				<ul class='userSub'>
 					<li><a>내 프로필</a></li>
 					<li><a>내 프로젝트</a></li>
-					<li><a href="login.jsp">로그아웃</a></li>
+					<li><a href="View/login.jsp">로그아웃</a></li>
 				</ul>
 				</details-menu>
 			</details>

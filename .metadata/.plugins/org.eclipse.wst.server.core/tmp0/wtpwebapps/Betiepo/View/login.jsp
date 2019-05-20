@@ -11,7 +11,7 @@
 <title>Betiepo</title>
 
 <link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/forindex.css" />
+<link rel="stylesheet" href="css/forlogin.css" />
 
 </head>
 <body>
@@ -24,11 +24,12 @@
 				BETIEPO</div>
 			<div class="text summary">채우기만 해도 완성되는 포트폴리오</div>
 			<form action="../Control/loginProc.jsp" method="POST" class="login">
-				<label>이름</label> <input class='name' type="text"
-					placeholder="이름을 입력해주세요" maxlength="4" required> <br>
+				<label>이메일</label> <input class='name' type="text"
+					placeholder="이메일을 입력해주세요" maxlength="4" required> <br>
 				<label>비밀번호</label> <input class='pw' type="password"
 					placeholder="비밀번호를 입력해주세요" required> <br> <input
-					type="submit" value="접속하기"> <br> <a class="Signup">회원가입</a>
+					type="submit" value="접속하기"> <br> 
+				<a class="Signup" href="signUp.jsp">회원가입</a>
 			</form>
 		</div>
 	</header>

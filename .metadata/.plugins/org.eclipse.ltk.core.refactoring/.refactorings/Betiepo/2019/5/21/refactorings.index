@@ -14,3 +14,11 @@
 1558361620728	Move 'template.jsp' to 'TemplateView'
 1558361623459	Move 'main.jsp' to 'TemplateView'
 1558362662484	Delete element
+1558366289773	Move 'main.jsp' to 'WebContent'
+1558366547756	Move 'template.jsp' to 'WebContent'
+1558366578907	Move 'template.jsp' to 'TemplateView'
+1558366591347	Move 'template.jsp' to 'WebContent'
+1558366906855	Move 'indexTemplate.jsp' to 'WebContent'
+1558366909149	Move 'portfolioWriteFormTemplate.jsp' to 'WebContent'
+1558366911955	Delete element
+1558367381965	Rename resource 'forindex.css'
