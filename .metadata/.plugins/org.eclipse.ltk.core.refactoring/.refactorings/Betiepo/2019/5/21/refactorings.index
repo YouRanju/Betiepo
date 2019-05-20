@@ -10,3 +10,7 @@
 1558348573705	Move 'top.jsp' to 'View'
 1558348597897	Move 'login.jsp' to 'View'
 1558349281773	Delete element
+1558361614207	Move 'css' to 'View'
+1558361620728	Move 'template.jsp' to 'TemplateView'
+1558361623459	Move 'main.jsp' to 'TemplateView'
+1558362662484	Delete element

@@ -21,26 +21,6 @@
 
 </head>
 <body>
-	<header class="header">
-		<a class="title" href='../html/main.html'>BETIEPO</a>
-		<div class="User">
-			<details>
-				<summary>
-					<i class="fas fa-user-circle icon"></i> UserName&nbsp;&nbsp;<i
-						class="fas fa-chevron-down"></i>
-				</summary>
-				<details-menu>
-				<ul class='userSub'>
-					<li><a>내 프로필</a></li>
-					<li><a>내 프로젝트</a></li>
-					<li><a href="../html/index.html">로그아웃</a></li>
-					<!-- 나중에 링크수정 -->
-				</ul>
-				</details-menu>
-			</details>
-		</div>
-	</header>
-
 	<nav>
 		<ul class="nav">
 			<li><input type="radio" name="nav" id="saveBtn"> <label
@@ -60,10 +40,5 @@
 				for="closeBtn" class="labelBtn">창닫기</label></li>
 		</ul>
 	</nav>
-
-	<footer class="footer">
-		<hr class="footerhr">
-		<div>&copy; TEAM BETIEPO 2019</div>
-	</footer>
 </body>
 </html>

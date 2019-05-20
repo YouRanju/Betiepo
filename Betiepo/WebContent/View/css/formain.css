@@ -1,13 +1,13 @@
 #contents .container { border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
 
-.container { position: relative; width: 1200px; margin: 0 auto; }
+.container { position: relative; width: 1900px; margin: 0 auto; }
 
 /* title */
 .maintitle { margin: 40px 10%; margin-bottom: 20px }
 
 .maintitle h1 { font-size: 3.8em; font-weight: bold; }
 
-table { padding: 5px; margin-bottom: 30px; width: 100%;}
+.heading { padding: 5px; margin-bottom: 30px; width: 100%;}
 
 .forsearch { text-align: right; vertical-align: bottom; }
 
@@ -35,7 +35,7 @@ input[class = "searchbutton"] { padding: 5px; width: 70px;
 
 /* center */
 .center { overflow: hidden; margin: 0 11%;
-    width: 700px; height: 620px; padding: 0 20px; }
+    width: 700px; height: 670px; padding: 0 20px; }
 
 .create, .item { width: 28%; margin: 0px 15px; float: left; }
     

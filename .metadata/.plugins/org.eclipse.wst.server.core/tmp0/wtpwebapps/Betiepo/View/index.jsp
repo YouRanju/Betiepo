@@ -7,16 +7,6 @@
 <meta name="viewport"
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
-<title>Betiepo</title>
-
-<link rel="shortcut icon" href="../img/logo.png">
-
-<link rel="stylesheet" href="../css/reset.css" />
-<link rel="stylesheet" href="../css/all.css" />
-
-<link rel="stylesheet" href="../css/formain.css" />
-
-
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -26,7 +16,7 @@
 <body>
 	<main>
 	<section class="maintitle">
-		<table>
+		<table class="heading">
 			<tr>
 				<td><h1>포트폴리오 목록</h1></td>
 				<td class="forsearch"><input class="search" type="text"
@@ -45,12 +35,12 @@
 		<div class="items">
 			<div class="create">
 				<div class='project'>
-					<a href="#"><img src='../img/create.png'></a>
+					<a href="portfolioWriteFormTemplate.jsp"><img src='../img/create.png'></a>
 					<div class='explanation'>
-						<a class='itemlink' href="#">새로만들기</a>
+						<a class='itemlink' href="portfolioWriteFormTemplate.jsp">새로만들기</a>
 						<p>새로운 포트폴리오를 생성합니다.</p>
 						<hr>
-						<div id="date" class='date'></div>
+						<div id="date" class='date'>　</div>
 					</div>
 				</div>
 			</div>
