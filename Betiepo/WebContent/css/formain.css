@@ -5,22 +5,22 @@
 /* title */
 .maintitle { margin: 40px 10%; margin-bottom: 20px }
 
-.maintitle h1 { font-size: 3.8em; font-weight: bold; }
+.maintitle h1 { display:inline; font-size: 3.8em; font-weight: bold; }
 
-.heading { padding: 5px; margin-bottom: 30px; width: 100%;}
+.heading { margin-bottom: 30px; width: 100%; height: 200}
 
 .forsearch { text-align: right; vertical-align: bottom; }
 
 .mainhr { border: 0.5px solid rgb(251, 185, 188); }
 
-input[class = "search"] { padding: 5px; width: 370px;
+input[class = "search"] { padding: 5px; width: 280px;
     border: 2px solid rgb(251, 185, 188); border-radius: 4px;
     font-size: 15px; margin-right: 5px; }
 
 input[class = "searchbutton"] { padding: 5px; width: 70px;
     border: 2px solid lightgray; 
     background-color: lightgray;
-    border-radius: 4px; font-size: 15px; }
+    border-radius: 4px; font-size: 17px; }
 
 /* left */
 .left { position: fixed; left: 0; top: 240px;

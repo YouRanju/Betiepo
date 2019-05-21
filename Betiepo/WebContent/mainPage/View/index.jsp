@@ -7,31 +7,23 @@
 <meta name="viewport"
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="css/formain.css" />
 
 </head>
-<body>
-	<%
-		request.setCharacterEncoding("UTF-8");
-		String contentPage = request.getParameter("CONTENTPAGE");
-	%>
-	
+<body>	
 	<main>
 	<section class="maintitle">
 		<table class="heading">
 			<tr>
-				<td><h1>포트폴리오 목록</h1></td>
+				<td width="60%"><h1>포트폴리오 목록</h1></td>
 				<td class="forsearch">
 					<form action="portfolioList/Pro/ListPro.jsp">
-						<input class="search" type="text" placeholder="검색"> 
+						<input class="search" type="text" placeholder="검색" name="searchName"> 
 						<input class="searchbutton" type="submit" value="검색">
 					</form>
 				</td>
 			</tr>
-		</table>
+		</table>	
 		<hr class="mainhr">
 	</section>
 	

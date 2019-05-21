@@ -3,7 +3,7 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 
-	session.setMaxInactiveInterval(10); 
+	//session.setMaxInactiveInterval(100); 
 	
 	//로그인 X
 	if(session.getAttribute("isLogin") == null) {

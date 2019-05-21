@@ -30,8 +30,6 @@ nav { border-bottom: 0.2px lightgray solid; }
     margin: 0 0.2%; width: 60px; height: 100%;
     text-align: center }
 
-input { position: fixed; left: -9999px; }
-
 .nav li label { transition: all 0.1s ease-in-out; 
     color: rgb(129, 114, 115); }
 .nav li label:hover { transition: all 0.1s ease-in-out; 

@@ -3,23 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
-<link rel="shortcut icon" href="../img/logo.png">
+<link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo</title>
 
 <link rel="stylesheet" href="css/reset.css" />
-
-<!-- top -->
-<link rel="stylesheet" href="css/form_top.css" />
-<link rel="stylesheet" href="css/user.css" />
-
-<!-- index main -->
-<link rel="stylesheet" href="css/formain.css" />
-
-<!-- bottom -->
-<link rel="stylesheet" href="css/forbottom.css" />
 
 </head>
 <body>
