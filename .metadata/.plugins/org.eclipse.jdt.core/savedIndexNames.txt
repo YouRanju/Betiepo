@@ -8,7 +8,6 @@ INDEX VERSION 1.131+C:\Users\RanjuYou\Desktop\Betiepo\.metadata\.plugins\org.ecl
 58444662.index
 1188785453.index
 402782763.index
-1744496115.index
 1897928139.index
 1794327708.index
 441725227.index

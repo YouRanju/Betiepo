@@ -9,7 +9,6 @@
 	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
 	crossorigin="anonymous">
 
-<!-- top -->
 <link rel="stylesheet" href="css/form_top.css" />
 <link rel="stylesheet" href="css/user.css" />
 
@@ -25,8 +24,8 @@
 						class="fas fa-chevron-down"></i>
 				</summary>
 				<ul class='userSub'>
-					<li><a>내 프로필</a></li>
-					<li><a>내 프로젝트</a></li>
+					<li><a href="myProfileForm.jsp">내 프로필</a></li>
+					<li><a href="myProjectForm.jsp">내 프로젝트</a></li>
 					<li><a href="member/Pro/logoutProc.jsp">로그아웃</a></li>
 				</ul>
 			</details>

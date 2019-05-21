@@ -13,14 +13,16 @@ body {}
 
 .title:hover { color: white;}
 
-.User { color : white; font-size: 2em; margin-right: 5%; 
-        float: right; }
+.User { color : white; font-size: 1.5em; margin-right: 5%; 
+        float: right; line-height:36px; }
 
 .UserName { display: inline-block; font-size: 0.8em; margin-right: 5%; }
 
 .fa-chevron-down { font-size: 0.8em; }
 
 /* nav */
+input[type="radio"] { position:absolute; left:-9999px; }
+
 nav { border-bottom: 0.2px lightgray solid; }
 
 .nav { box-sizing: border-box; margin: 0.2% 1.2%; padding: 3px;
@@ -42,4 +44,5 @@ nav { border-bottom: 0.2px lightgray solid; }
 
 .nav li ul li { padding: 5px; width: 100%;
     background-color: rgb(250, 247, 253);  text-align: left; }
+.nav li ul li:hover { background-color: rgb(237, 215, 222); }
 .nav li ul a { color: rgb(187, 165, 166); font-size: 14px; }
