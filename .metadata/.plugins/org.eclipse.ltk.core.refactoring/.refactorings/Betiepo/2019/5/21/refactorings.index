@@ -43,3 +43,6 @@
 1558419155284	Move 'portfolioWriteForm.jsp' to 'View'
 1558419167016	Delete element
 1558421312796	Move 'portfolioFormProc.jsp' to 'WebContent'
+1558431227461	Rename resource 'portfolioFormProc.jsp'
+1558435768694	Delete element
+1558435779830	Rename resource 'Lists.jsp'
