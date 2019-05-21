@@ -35,9 +35,9 @@
 		<div class="items">
 			<div class="create">
 				<div class='project'>
-					<a href="portfolioWriteFormTemplate.jsp"><img src='img/create.png'></a>
+					<a href="portfolioFormProc.jsp"><img src='img/create.png'></a>
 					<div class='explanation'>
-						<a class='itemlink' href="portfolioWriteFormTemplate.jsp">새로만들기</a>
+						<a class='itemlink' href="portfolioFormProc.jsp">새로만들기</a>
 						<p>새로운 포트폴리오를 생성합니다.</p>
 						<hr>
 						<div id="date" class='date'>　</div>

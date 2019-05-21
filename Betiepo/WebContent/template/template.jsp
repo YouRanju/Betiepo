@@ -6,20 +6,20 @@
 <meta name="viewport"
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
-<link rel="shortcut icon" href="img/logo.png">
+<link rel="shortcut icon" href="../img/logo.png">
 <title>Betiepo</title>
 
-<link rel="stylesheet" href="View/css/reset.css" />
+<link rel="stylesheet" href="css/reset.css" />
 
 <!-- top -->
-<link rel="stylesheet" href="View/css/form_top.css" />
-<link rel="stylesheet" href="View/css/user.css" />
+<link rel="stylesheet" href="css/form_top.css" />
+<link rel="stylesheet" href="css/user.css" />
 
 <!-- index main -->
-<link rel="stylesheet" href="View/css/formain.css" />
+<link rel="stylesheet" href="css/formain.css" />
 
 <!-- bottom -->
-<link rel="stylesheet" href="View/css/forbottom.css" />
+<link rel="stylesheet" href="css/forbottom.css" />
 
 </head>
 <body>
@@ -30,7 +30,7 @@
 
 	<table width="100%" cellpadding="0" cellspacing="0">
 		<tr>
-			<td colspan="2"><jsp:include page="View/top.jsp" flush="false" /></td>
+			<td colspan="2"><jsp:include page="top.jsp" flush="false" /></td>
 		</tr>
 		<tr>
 			<td valign="top"><jsp:include page="<%=contentPage%>"
@@ -38,7 +38,7 @@
 		</tr>
 
 		<tr>
-			<td colspan="2"><jsp:include page="View/bottom.jsp" flush="false" />
+			<td colspan="2"><jsp:include page="bottom.jsp" flush="false" />
 			</td>
 		</tr>
 	</table>

@@ -1,4 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!-- DB 연동 하세요 -->
-<jsp:forward page="../main.jsp" />
+
+<%
+	request.setCharacterEncoding("UTF-8");
+	
+	session.invalidate();
+	
+	response.sendRedirect("../../main.jsp");
+%>

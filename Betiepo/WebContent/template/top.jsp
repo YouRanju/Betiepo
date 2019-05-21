@@ -14,18 +14,19 @@
 </head>
 <body>
 	<header class="header">
-		<a class="title" href='indexTemplate.jsp'>BETIEPO</a>
+		<a class="title" href='main.jsp'>BETIEPO</a>
 		<div class="User">
 			<details>
 				<summary>
-					<i class="fas fa-user-circle icon"></i> UserName&nbsp;&nbsp;<i
-						class="fas fa-chevron-down"></i>
+					<i class="fas fa-user-circle icon"></i> 
+					<%= session.getAttribute("isLogin") %>&nbsp;&nbsp;
+					<i class="fas fa-chevron-down"></i>
 				</summary>
 				<details-menu>
 				<ul class='userSub'>
 					<li><a>내 프로필</a></li>
 					<li><a>내 프로젝트</a></li>
-					<li><a href="View/login.jsp">로그아웃</a></li>
+					<li><a href="member/Pro/logoutProc.jsp">로그아웃</a></li>
 				</ul>
 				</details-menu>
 			</details>
