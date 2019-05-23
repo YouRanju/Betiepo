@@ -1,0 +1,28 @@
+/* left */
+.left { position: relative; left: 0;
+	display: inline-block; float:left;
+    width: 12%; height: 620px;}
+
+.left>div { position:absolute; right: 0; width: 65%; }
+
+.index { margin-bottom: 5px; padding-left: 30px;  
+	background: linear-gradient(to right, red 10%, white 10%);
+	height: 38px; line-height: 38px; border-radius: 4px;
+	color: black; font-size: 15px; }
+
+.index:hover { background: linear-gradient(to right, red 10%, rgb(248, 233, 232) 10%); }
+
+.index a:hover { color: black; }
+
+.indexPlus { margin-bottom: 5px; padding-left: 30px;  
+	background: linear-gradient(to right, purple 10%, white 10%);
+	height: 38px; line-height: 38px; border-radius: 4px;
+	color: black; font-size: 15px; }
+
+/**/	
+.index2 { margin-bottom: 5px; padding-left: 30px;  
+	background: linear-gradient(to right, royalblue 10%, white 10%);
+	height: 38px; line-height: 38px; border-radius: 4px;
+	color: black; font-size: 15px; }
+	
+.index2:hover { background: linear-gradient(to right, royalblue 10%, rgb(65, 105, 225) 10%); }
