@@ -1,4 +1,8 @@
-INDEX VERSION 1.4+D:\MEMEME\Project\Betiepo\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2324433492.index
+INDEX VERSION 1.4+C:\Users\RanjuYou\Desktop\Betiepo\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4180251473.index
+4212218866.index
 3438459939.index
 441725227.index
+3829321827.index
+2599715914.index
+893634611.index

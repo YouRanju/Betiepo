@@ -3,19 +3,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/listView.css" />
 </head>
 <body>
 	<section class="center">
 		<div class="items">
-			<div class="item" style="display: none">
+			<div class="item" style="display: block">
 				<div class='project'>
 					<a href="#"><img src='img/logo.png'></a>
 					<div class='explanation'>
-						<a class='itemlink' href="#">NewProject</a>
-						<p>NewProject</p>
+						<a class='itemlink' href="#">BETIEPO</a>
+						<p>BE TIE PORTFOLIO</p>
 						<hr>
-						<div id="date" class='date'>2019-04-19</div>
+						<div id="date" class='date'>2019-05-23</div>
 					</div>
 				</div>
 			</div>

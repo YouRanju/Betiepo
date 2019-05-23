@@ -9,7 +9,7 @@
 
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo</title>
-
+<link rel="stylesheet" href="css/reset.css" />
 </head>
 <body>
 	<nav>
