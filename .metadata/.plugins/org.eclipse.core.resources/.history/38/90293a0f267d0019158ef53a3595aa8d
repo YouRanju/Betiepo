@@ -1,0 +1,13 @@
+
+function layerpop() {
+	var dimLayer = document.getElementsByClassName("dim-layer")[0];
+	
+	dimLayer.style.visibility = "visible";
+}
+
+function pop_close() {
+	var dimLayer = document.getElementsByClassName("dim-layer")[0];
+	
+	dimLayer.style.visibility = "hidden";
+	
+}

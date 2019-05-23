@@ -1,0 +1,6 @@
+function bb() {
+	var dimLayer = document.getElementsByClassName("dim-layer")[0];
+	
+	dimLayer.style.visibility = "visible";
+	
+}

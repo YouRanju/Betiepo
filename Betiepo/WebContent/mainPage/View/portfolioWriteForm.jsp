@@ -8,7 +8,7 @@
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
 <link rel="shortcut icon" href="img/logo.png">
-<title>Betiepo</title>
+<title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css" />
 </head>
 <body>
