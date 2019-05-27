@@ -1,0 +1,9 @@
+#projectOutline, #goal, #point {
+	height: 1000px;
+}
+#goal {
+	background-color: #F00;
+}
+#point {
+	background-color: #0F0;
+}

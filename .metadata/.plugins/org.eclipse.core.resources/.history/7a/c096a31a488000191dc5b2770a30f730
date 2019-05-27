@@ -1,0 +1,6 @@
+#projectOutline, #goal {
+	height: 1000px;
+}
+#goal {
+	bgcolor: #F00;
+}

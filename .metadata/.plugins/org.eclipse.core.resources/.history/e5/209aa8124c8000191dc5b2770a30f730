@@ -1,0 +1,15 @@
+#projectOutline, #goal, #point, #completeImg, #thoughts {
+	height: 1000px;
+}
+#goal {
+	background-color: #F00;
+}
+#point {
+	background-color: #0F0;
+}
+#completeImg {
+	background-color: #00F;
+}
+#thoughts {
+	background-color:#FF0;
+}

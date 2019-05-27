@@ -1,0 +1,12 @@
+#projectOutline, #goal, #point, #completeImg {
+	height: 1000px;
+}
+#goal {
+	background-color: #F00;
+}
+#point {
+	background-color: #0F0;
+}
+#completeImg {
+	background-color: #00F;
+}
