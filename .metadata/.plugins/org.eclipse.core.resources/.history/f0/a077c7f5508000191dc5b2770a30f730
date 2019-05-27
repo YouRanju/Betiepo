@@ -16,10 +16,9 @@ main { position: relative; }
 	background-color:#FF0;
 }
 
-.anchor { position: fixed; top: 50%; left: 100px;
-	transform: translateY(-50px); 
+.anchor { position: fixed; top: 50%; left: 50px;
 	display: inline-block; width: 100px;
 	line-height: 30px; }
 	
 .anchor * { display: block; color: rgb(187, 165, 166);
-	font-size: 12px; font-weight:bold; }
+	font-size: 16px; font-weight:bold; }

@@ -92,30 +92,10 @@
 		</div>
 		
 		<div id="completeImg">
-			<div>
-            	<label>완성이미지</label>
-	        </div>
-		</div>
 		
+		</div>
 		<div id="thoughts">
-			<div>
-            	<label>공부방향</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
-			<div>
-            	<label>어려웠던 점과 그에 따른 해결방안</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
-			<div>
-            	<label>총 소감</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
+		
 		</div>
 	</main>                    
 </body>

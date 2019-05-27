@@ -110,12 +110,6 @@
 	        <div>
 				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
 			</div>
-			<div>
-            	<label>총 소감</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
 		</div>
 	</main>                    
 </body>

@@ -16,8 +16,7 @@ main { position: relative; }
 	background-color:#FF0;
 }
 
-.anchor { position: fixed; top: 50%; left: 100px;
-	transform: translateY(-50px); 
+.anchor { position: fixed; top: 50%; left: 50px;
 	display: inline-block; width: 100px;
 	line-height: 30px; }
 	

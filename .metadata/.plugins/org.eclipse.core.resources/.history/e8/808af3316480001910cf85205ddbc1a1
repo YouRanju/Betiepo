@@ -35,7 +35,7 @@
              </div>
                                             
 			<div>
-				<label>진행기간</label>
+				<label>제작기간</label>
 				<input id = 'firsttime' type = 'date' placeholder=" ">
 				~
 				<input id = 'lasttime' type = 'date' placeholder=" ">
@@ -47,14 +47,6 @@
 			</div>
 			<div>
 	            <label>담당 / 기여도</label>
-	            <input id = 'team' type = 'text'>
-	        </div>
-	        <div>
-	            <label>깃허브 주소</label>
-	            <input id = 'team' type = 'text'>
-	        </div>
-	        <div>
-	            <label>비고</label>
 	            <input id = 'team' type = 'text'>
 	        </div>
 	        <div>
@@ -70,52 +62,15 @@
             	<label>제작목적</label>
             	<input id = "purpose" type = 'text'>
 	        </div>
-	        <div>
-            	<label>목표사용자</label>
-            	<input id = "purpose" type = 'text'>
-	        </div>
-	        <div>
-            	<label>시나리오</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
 		</div>
-		
 		<div id="point">
-			<div>
-            	<label>핵심코드</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
-		</div>
 		
+		</div>
 		<div id="completeImg">
-			<div>
-            	<label>완성이미지</label>
-	        </div>
-		</div>
 		
+		</div>
 		<div id="thoughts">
-			<div>
-            	<label>공부방향</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
-			<div>
-            	<label>어려웠던 점과 그에 따른 해결방안</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
-			<div>
-            	<label>총 소감</label>
-	        </div>
-	        <div>
-				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
-			</div>
+		
 		</div>
 	</main>                    
 </body>
