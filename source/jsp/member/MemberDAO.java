@@ -1,4 +1,4 @@
-package jsp.member;
+ package jsp.member;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -80,7 +80,12 @@ public class MemberDAO {
 			conn = DatabaseUtil.getConnection();
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, email);
-			return (pstmt.executeUpdate()==0)? true : false; // new or not
+			pstmt.executeQuery();
+			rs = pstmt.executeQuery(SQL);
+			int rowCount = rs.getRow();
+			
+			System.out.println(rowCount);
+			return (rowCount== 0)? true : false; // new or not
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
