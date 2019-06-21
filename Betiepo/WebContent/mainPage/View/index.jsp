@@ -8,7 +8,7 @@
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
 <link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/formain.css" />
+<link rel="stylesheet" href="css/formain.css?ver=1.1" />
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -50,12 +50,27 @@
 			<div class="pop-container">
 				<div class="pop-conts">
 					<div class="CreateCont">
-						<div class="Create">무슨내용을 넣을까요?<br></div>
-						<a class="createBtn" href="portfolioForm.jsp">생성하기</a>
+						<div class="Create">무슨내용을 넣을까요?<br></div>	
+						<div style="margin-bottom: 200px">
+							<div class="lists">
+								<b>카테고리</b><br>
+								<select size="8">
+									<option>프로젝트</option>
+									<option>외부활동</option>
+								</select>
+							</div>
+							<div class="infomationNew">
+								<b>프로젝트 이름</b>
+								<input type="text"><br>
+								<b>사용 언어</b>
+								<input type="text">
+							</div>
+						</div>
 					</div>
 
 					<div class="btn">
-						<button class="close" onclick="pop_close()">닫기</button>
+						<a class="createBtn" href="portfolioForm.jsp">생성하기</a>
+						<a class="close" onclick="pop_close()">닫기</a>
 					</div>
 				</div>
 			</div>

@@ -16,7 +16,7 @@
 	<jsp:include page="portfolioWriteNav.jsp" flush="false" />
 	<main>
 		<span class="anchor">
-			<a href="#projectOutline">Outline</a>
+			<a href="#projectOutline">Information</a>
 			<a href="#goal">Goal/Scenario</a>
 			<a href="#point">Point</a>
 			<a href="#completeImg">Complete Image</a>
@@ -24,6 +24,7 @@
 		</span>
 		
 		<div id="projectOutline">
+			<h1>Information</h1>
 			<div>
                  <label>프로젝트 제목</label>
                  <input id = "pjtitle" type = 'text'>
