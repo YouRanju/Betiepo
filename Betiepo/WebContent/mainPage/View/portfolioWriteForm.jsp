@@ -10,10 +10,9 @@
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/projectWrite.css" />
+<link rel="stylesheet" href="css/projectWrite.css?ver=1.1" />
 </head>
 <body>
-	<jsp:include page="portfolioWriteNav.jsp" flush="false" />
 	<main>
 		<span class="anchor">
 			<a href="#projectOutline">Information</a>
@@ -24,7 +23,7 @@
 		</span>
 		
 		<div id="projectOutline">
-			<h1>Information</h1>
+			<h1>INFORMATION</h1>
 			<div>
                  <label>프로젝트 제목</label>
                  <input id = "pjtitle" type = 'text'>
@@ -67,6 +66,7 @@
 		</div>
 		
 		<div id="goal">
+			<h1>GOAL / SCENARIO</h1>
         	<div>
             	<label>제작목적</label>
             	<input id = "purpose" type = 'text'>
@@ -84,6 +84,7 @@
 		</div>
 		
 		<div id="point">
+			<h1>POINT</h1>
 			<div>
             	<label>핵심코드</label>
 	        </div>
@@ -93,12 +94,14 @@
 		</div>
 		
 		<div id="completeImg">
+			<h1>COMPLETE IMAGE</h1>
 			<div>
             	<label>완성이미지</label>
 	        </div>
 		</div>
 		
 		<div id="thoughts">
+			<h1>THOUGHTS</h1>
 			<div>
             	<label>공부방향</label>
 	        </div>
@@ -118,6 +121,8 @@
 				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
 			</div>
 		</div>
-	</main>                    
+	</main>       
+	
+	<jsp:include page="portfolioWriteNav.jsp" flush="false" />             
 </body>
 </html>

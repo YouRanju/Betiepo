@@ -6,7 +6,7 @@ body {}
 
 /* header */
 .header { padding: 2px; background-color: rgb(251, 185, 188); 
-    position: relative; height: 36px; }
+    position: fixed; height: 36px; z-index: 999999; width:100%;}
 
 .title {  margin-left: 5%; font-size:24px; font-weight: bold; color: white;
     display: inline-block;}
@@ -21,7 +21,7 @@ body {}
 .fa-chevron-down { font-size: 0.8em; }
 
 /* nav */
-input[type="radio"] { position:absolute; left:-9999px; }
+/*input[type="radio"] { position:absolute; left:-9999px; }
 
 nav { border-bottom: 0.2px lightgray solid; }
 
@@ -46,3 +46,4 @@ nav { border-bottom: 0.2px lightgray solid; }
     background-color: rgb(250, 247, 253);  text-align: left; }
 .nav li ul li:hover { background-color: rgb(237, 215, 222); }
 .nav li ul a { color: rgb(187, 165, 166); font-size: 14px; }
+ */
