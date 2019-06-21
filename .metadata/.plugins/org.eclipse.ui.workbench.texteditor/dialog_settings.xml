@@ -2,12 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="dim-layer" key="selection"/>
+		<item value="lines" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="lines"/>
+			<item value="border"/>
+			<item value="/* .menu-item,"/>
+			<item value="/* .lists&gt;b, .infomationNew b { color:royalblue; font-weight:bold; font-size: 14px; }"/>
+			<item value="/* .lists&gt;select { margin-top : 8px; overflow-y: auto; width: 100%;"/>
+			<item value=".lists&gt;select { margin-top : 8px; overflow-y: auto; width: 100%;"/>
 			<item value="dim-layer"/>
 		</list>
 		<list key="replacehistory">
@@ -18,6 +24,6 @@
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
 		<item value="906" key="DIALOG_X_ORIGIN"/>
-		<item value="722" key="DIALOG_Y_ORIGIN"/>
+		<item value="657" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

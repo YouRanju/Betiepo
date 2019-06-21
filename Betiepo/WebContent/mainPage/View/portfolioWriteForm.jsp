@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/projectWrite.css?ver=1.1" />
+<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.1" />
 </head>
 <body>
 	<main>
@@ -22,8 +22,10 @@
 			<a href="#thoughts">Thoughts</a>
 		</span>
 		
-		<div id="projectOutline">
+		<div id="projectOutline" style="colunm-count=2">
 			<h1>INFORMATION</h1>
+			<div>
+			</div>
 			<div>
                  <label>프로젝트 제목</label>
                  <input id = "pjtitle" type = 'text'>
@@ -109,7 +111,7 @@
 				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
 			</div>
 			<div>
-            	<label>어려웠던 점과 그에 따른 해결방안</label>
+            	<label>어려웠던 점과<br>그에 따른 해결방안</label>
 	        </div>
 	        <div>
 				<textarea id = 'explain' cols = '70' rows = '12'></textarea>
