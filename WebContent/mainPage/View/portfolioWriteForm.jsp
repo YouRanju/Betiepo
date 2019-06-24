@@ -42,12 +42,14 @@
 		<a href="#goal">Goal/Scenario</a> <a href="#point">Point</a> <a
 		href="#completeImg">Complete Image</a> <a href="#thoughts">Thoughts</a>
 	</span>
-
+	<form action="portfolioWriteFormProc.jsp" method="post">
 	<div id="projectOutline" class="fadeinleft">
 		<div id="outline_info" style="display: inline-block; width: 650px;">
+		
 			<div>
 				<label>프로젝트 제목</label> 
-				<input id="pjtitle" type='text' name="pjtitle" placeholder="INSERT TITLE">
+				<% String projectName = request.getParameter("projectName"); %>
+				<input id="pjtitle" type='text' name="pjtitle" value="<%= projectName %>" placeholder="INSERT TITLE">
 			</div>
 			<div>
 				<label>프로젝트 장르</label> 
@@ -130,7 +132,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div id="thoughts" class = 'fadeinleft'>
 		<div id="thoughts_info">
 			<div>
@@ -154,6 +156,7 @@
 		</div>
 		
 	</div>
+	</form>
 	</main>
 
 	<jsp:include page="portfolioWriteNav.jsp" flush="false" />

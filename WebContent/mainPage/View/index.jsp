@@ -60,9 +60,9 @@
 							</div>
 							<div class="infomationNew">
 								<b>프로젝트 이름</b>
-								<input type="text"><br>
+								<input type="text" name="projectName"><br>
 								<b>대표이미지</b>
-								<input type="file">
+								<input type="file" name="projectImg">
 							</div>
 						</div>
 					</div>
