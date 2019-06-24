@@ -6,9 +6,15 @@ var item;
 var newitem;
 var newnode = [];
 
+// 새로만들기
+var create;
+
+//검색
+var searchinput;
+
 function init() {
     
-    items = document.getElementById('items');
+    items = document.getElementsById('items');
     item = document.getElementsByClassName('item')[0];
  
     removetext(items);
@@ -18,11 +24,37 @@ function init() {
     }
 
     s = 0;
+
     while(s < newnode.length) {
         removetext(newnode[s]);
         removetext(newnode[s].childNodes[0]);
         s++;
     }  
+
+    //새로 만들기
+    createlink = create.childNodes[1].childNodes[1];
+    createlink.href = '../html/main.html';
+    createlink = create.childNodes[1].childNodes[3].childNodes[1];
+    createlink.href = '../html/main.html';
+
+    //검색 input창
+    searchinput = document.getElementById('searchinput');
+    searchinput.onkeydown = goSearch;
+}
+
+function count(e) {
+    for(var i = 0; i < newnode.length; i++) {
+        if(e.target == newnode[i].childNodes[0].childNodes[1].childNodes[1]) {
+            localStorage.setItem('clicked', i);
+        }
+    }
+}
+
+function goSearch(e) {
+    //검색기능 - 서버에서 작동해보세여...
+    if(e.keyCode == 13) {
+        alert(searchinput.value);
+    }
 }
 
 function removetext(node) {

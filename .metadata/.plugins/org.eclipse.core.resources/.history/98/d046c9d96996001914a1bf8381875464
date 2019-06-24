@@ -8,7 +8,7 @@ var newnode = [];
 
 function init() {
     
-    items = document.getElementById('items');
+    items = document.getElementsById('items');
     item = document.getElementsByClassName('item')[0];
  
     removetext(items);

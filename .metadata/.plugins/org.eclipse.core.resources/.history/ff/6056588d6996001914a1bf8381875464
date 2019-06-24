@@ -5,7 +5,7 @@
 <head>
 <link rel="stylesheet" href="css/reset.css?ver=1" />
 <link rel="stylesheet" href="css/listView.css" />
-<script src="portfolioList/View/itemadd.js"></script>
+<script src="itemadd.js"></script>
 </head>
 <body>
 	<section class="center">
@@ -17,9 +17,7 @@
 			int cnt = SELECT COUNT(*) FROM userPortfolioList;
 			*/
 			int cnt = 4;
-			for(int i = 0; i < cnt; i++) {
-				//
-			}
+			for
 		%>
 			<div class="item" style="display: block">
 				<div class='project'>

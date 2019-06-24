@@ -5,22 +5,11 @@
 <head>
 <link rel="stylesheet" href="css/reset.css?ver=1" />
 <link rel="stylesheet" href="css/listView.css" />
-<script src="portfolioList/View/itemadd.js"></script>
+<script src="itemadd.js"></script>
 </head>
 <body>
 	<section class="center">
-		<div id="items">
-		<%
-			/* 
-			DB연동
-			ex)
-			int cnt = SELECT COUNT(*) FROM userPortfolioList;
-			*/
-			int cnt = 4;
-			for(int i = 0; i < cnt; i++) {
-				//
-			}
-		%>
+		<div class="items">
 			<div class="item" style="display: block">
 				<div class='project'>
 					<a href="#"><img src='img/logo.png'></a>

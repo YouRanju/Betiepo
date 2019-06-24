@@ -1,12 +1,7 @@
 INDEX VERSION 1.4+D:\MEMEME\Project\Betiepo\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2560023557.index
-396287477.index
-2442205257.index
-3438459939.index
-2918651547.index
-441725227.index
 3000337972.index
-1708523134.index
+2442205257.index
+441725227.index
 971139917.index
-508848283.index
-2399542083.index
+1708523134.index

@@ -8,7 +8,7 @@ var newnode = [];
 
 function init() {
     
-    items = document.getElementById('items');
+    items = document.getElementsById('items');
     item = document.getElementsByClassName('item')[0];
  
     removetext(items);
@@ -18,11 +18,20 @@ function init() {
     }
 
     s = 0;
+
     while(s < newnode.length) {
         removetext(newnode[s]);
         removetext(newnode[s].childNodes[0]);
         s++;
     }  
+}
+
+function count(e) {
+    for(var i = 0; i < newnode.length; i++) {
+        if(e.target == newnode[i].childNodes[0].childNodes[1].childNodes[1]) {
+            localStorage.setItem('clicked', i);
+        }
+    }
 }
 
 function removetext(node) {
