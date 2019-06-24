@@ -13,9 +13,9 @@
 <body>
 	<section class="left">
 		<div class="leftdiv">
-			<div class="index"><a href="#">프로젝트</a></div>
-			<div class="index2"><a href="#">활동</a></div>
-			<div class="indexPlus"><a href="#"><i class="fas fa-plus"></i></a></div>
+			<div class="index" style="display:none"><a href="#">프로젝트</a></div>
+			<div class="index2" style="display:none"><a href="#">활동</a></div>
+			<div class="indexPlus" style="display:none"><a href="#"><i class="fas fa-plus"></i></a></div>
 		</div>
 	</section>
 </body>

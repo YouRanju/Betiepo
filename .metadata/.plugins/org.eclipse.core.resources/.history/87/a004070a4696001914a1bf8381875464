@@ -1,0 +1,33 @@
+/* layout */
+body { background-color: rgb(251, 185, 188); }
+#contents .container { border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb; }
+
+/* container */
+.container { position: relative; width: 1200px; margin: 0 auto; }
+
+/* header */
+.logoimg { position: relative; display: block; padding-top: 140px;  padding-bottom: 50px; width: 180px; 
+    transform: translateY(30px); transition: all 2s ease-in-out;}
+
+.title { display: block; font-size: 50px; font-weight: bold; color:white; }
+
+.summary { display: block; font-size: 15px; color: rgb(114, 97, 98);  }
+
+.login { margin: auto; margin-top:20px; background-color: white;
+    border: 3px solid white; border-radius: 4px; width: 400px;
+    height: 220px; padding-top: 20px; }
+
+header div { margin: auto; text-align: center; }
+
+label { display:inline-block; margin-top: 20px; margin-right: 30px; font-size: 20px; 
+    width: 80px; text-align: right; }
+
+input { padding: 5px; width: 200px; border: 2px solid rgb(251, 185, 188);
+    border-radius: 4px; font-size: 15px; outline: none; }
+
+input[type="submit"] { margin: 30px auto; margin-bottom: 7px; 
+    padding: 5px; width: 200px; height: 45px; 
+    border: 0px solid rgb(251, 185, 188); border-radius: 4px;
+    font-size: 15px; }
+
+.footer { transition: 0s; color : gray;  margin-top: 30px; text-align: center; }

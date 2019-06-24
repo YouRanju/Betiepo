@@ -24,10 +24,10 @@
 			<td colspan="2"><jsp:include page="top.jsp" flush="false" /></td>
 		</tr>
 		<tr>
-			<td valign="top" style="padding-top:35px;"><jsp:include page="<%=contentPage%>"
-					flush="false" /></td>
+			<td valign="top" style="padding-top:35px;">
+				<jsp:include page="<%=contentPage%>" flush="false" />
+			</td>
 		</tr>
-
 		<tr>
 			<td colspan="2"><jsp:include page="bottom.jsp" flush="false" />
 			</td>

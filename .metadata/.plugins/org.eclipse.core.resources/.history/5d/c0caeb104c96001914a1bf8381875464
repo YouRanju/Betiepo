@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	
+<!-- DB 연동하는 페이지 필요 -->
+
+<%
+	String user = session.getAttribute("isLogin");
+	/* 
+	DB
+	
+	SELECT * FROM userportpolio WHERE 
+	*/
+%>

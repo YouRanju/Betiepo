@@ -25,7 +25,7 @@
 				</summary>
 				<ul class='userSub'>
 					<li><a href="myProfileForm.jsp">내 프로필</a></li>
-					<li><a href="myProjectForm.jsp">내 프로젝트</a></li>
+					<li><a href="myProjectForm.jsp" style="display:none">내 프로젝트</a></li>
 					<li><a href="member/Pro/logoutProc.jsp">로그아웃</a></li>
 				</ul>
 			</details>

@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	
+<!-- DB 연동 하세요 -->
+
+<%
+	request.setCharacterEncoding("utf-8");
+	
+	String email = request.getParameter("email");
+	String pw = request.getParameter("pw");
+	
+	/* 
+	//DB 연동하는 곳 
+	ex)
+	SELECT * FROM usertbl WHERE id = email(이건 변수);
+	    ==> 있으면 밑으로
+		==> 없으면
+			out.println("<script>alert("존재하지 않는 회원입니다. 회원가입해주십시오.");</script>");
+	AND pw = pw(이건 변수);
+		==> 있으면 밑으로
+		==> 없으면
+			
+	*/
+	
+	if(email != null && pw != null) {
+		session.setAttribute("isLogin", email);
+	}
+	
+	response.sendRedirect("../../main.jsp");
+%>
+	
