@@ -40,9 +40,8 @@
 		<hr class="mainhr">
 	</section>
 
-	<jsp:include page="../../portfolioList/View/IndexView.jsp"
-		flush="false" /> <jsp:include
-		page="../../portfolioList/View/ListView.jsp" flush="false" />
+	<jsp:include page="../../portfolioList/View/IndexView.jsp" flush="false" /> 
+	<jsp:include page="../../portfolioList/View/ListView.jsp" flush="false" />
 
 	<div class="layer-popup">
 		<div class="popBg"></div>
