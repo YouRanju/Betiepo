@@ -24,7 +24,7 @@ public class UserDAO {
 		}
 	}
 	
-	public int login (String email, String pw) {
+	public int login(String email, String pw) {
 		String SQL = "SELECT pw FROM member WHERE email = ?";
 		
 		try {
@@ -43,5 +43,19 @@ public class UserDAO {
 			e.printStackTrace();
 		}
 		return -2; // db error
+	}
+	
+	public int join(User user) {
+		String SQL = "INSERT INTO member VALUES(?, ?, ?, NULL, 0)";
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, user.getName());
+			pstmt.setString(2, user.getEmail());
+			pstmt.setString(3, user.getPw());
+			return pstmt.executeUpdate(); // success!
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return -1; // DB error
 	}
 }
