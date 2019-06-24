@@ -1,0 +1,60 @@
+//아이템 추가
+var items;
+var item;
+var newitem;
+var newnode = [];
+
+function init() {
+    
+    items = document.getElementById('items');
+    item = document.getElementsByClassName('item')[0];
+ 
+    removetext(items);
+    
+    for(var i = 0; i < items.childElementCount; i++) {
+        newnode.push(items.childNodes[i]);
+    }
+
+    s = 0;
+    while(s < newnode.length) {
+        removetext(newnode[s]);
+        removetext(newnode[s].childNodes[0]);
+        s++;
+    }
+}
+
+function removetext(node) {
+    //node중에서 text를 없애는 함수
+    i=0;
+    for(var value of node.childNodes.values()) {
+        if(value.nodeName == '#text') {
+            node.removeChild(node.childNodes[i]);
+        }
+        i++;
+    }
+}
+
+var Max;
+var index = 0;
+
+function copy(name, explain, date) {
+    //프로젝트를 추가했을 때 만들어지는 함수
+    var cloneE = item.cloneNode(true);
+    
+    //cloneE.getElementsByClassName('date')[0].innerHTML = date;
+    explanDate(cloneE, name, explain, date);
+    
+    cloneE.style.display = 'block';
+
+    items.appendChild(cloneE);
+
+    removetext(items);
+}
+
+function explanDate(node, name, explain, date) {
+    //생성날짜를 표기하는 함수
+	//node.getElementsByClassName('itemlink')[0].innerHTML = name;
+    node.getElementsByClassName('itemexplain')[0].innerHTML = explain;
+    node.getElementsByClassName('date')[0].innerHTML = date;
+    
+}

@@ -1,5 +1,3 @@
-window.onload = init;
-
 //아이템 추가
 var items;
 var item;
@@ -13,7 +11,7 @@ function init() {
  
     removetext(items);
     
-    for(var i = 1; i < items.childElementCount; i++) {
+    for(var i = 0; i < items.childElementCount; i++) {
         newnode.push(items.childNodes[i]);
     }
 
@@ -22,7 +20,7 @@ function init() {
         removetext(newnode[s]);
         removetext(newnode[s].childNodes[0]);
         s++;
-    }  
+    }
 }
 
 function removetext(node) {
@@ -36,40 +34,18 @@ function removetext(node) {
     }
 }
 
-var Max;
-var index = 0;
-
-function copy() {
-    //프로젝트를 추가했을 때 만들어지는 함수
-    items.removeChild(items.lastChild);
-
+function copy(name, explain, date, img) {
     var cloneE = item.cloneNode(true);
-    var cloneCreate = create.cloneNode(true);
-
-    explanDate(cloneE);
-
+    
+    cloneE.getElementsByClassName('itemlink')[0].innerHTML = name;
+    cloneE.getElementsByClassName('itemexplain')[0].innerHTML = explain;
+    cloneE.getElementsByClassName('date')[0].innerHTML = date;
+    //일단 지금은 경로로 설정해놓음
+    cloneE.getElementsByClassName('img')[0].src = img;
+    
     cloneE.style.display = 'block';
 
     items.appendChild(cloneE);
-    items.appendChild(cloneCreate);
 
     removetext(items);
-
-    if(localStorage.getItem('index') != null) {
-        index = localStorage.getItem('index');
-        index++;
-        localStorage.setItem('index', index);
-    } else {
-        localStorage.setItem('index', index);
-    }
-
-    localStorage.setItem('items', items.innerHTML);
-}
-
-function explanDate(node) {
-    //생성날짜를 표기하는 함수
-    createdate = node.getElementsByClassName('date')[0];
-    today = new Date();
-
-    createdate.innerHTML = today.getFullYear() + "년 " + (today.getMonth()+1) + "월 " + today.getDate() + "일";
 }

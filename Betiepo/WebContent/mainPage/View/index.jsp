@@ -29,7 +29,7 @@
 			<button class="new" onclick="layerpop()">
 				<i class="fas fa-plus"></i>새로 만들기
 			</button>
-			<form action="portfolioList/Pro/ListPro.jsp">
+			<form action="portfolioList/Pro/ListSearchPro.jsp">
 				<input class="search" type="text" placeholder="검색" name="searchName">
 				<button class="button">
 					<i class="fas fa-search"></i>
