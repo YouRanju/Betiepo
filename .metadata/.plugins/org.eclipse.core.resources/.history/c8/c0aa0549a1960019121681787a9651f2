@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<<script src="ClientPro/DBjs.js"></script>
+
+<%
+	/*
+	DB 연동하는 곳 
+	
+	연동해서 각 값을 해당 자리에 넣으세요.
+	*/
+%>
+
+<script>
+	document.getElementById('pjtitle').value = 'BETIEPO';
+</script>

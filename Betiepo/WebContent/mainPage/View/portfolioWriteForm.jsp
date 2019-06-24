@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css?ver=1" />
-<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.5" />
+<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.8" />
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -31,10 +31,21 @@
 	            
 	        }); 
 	    });
+	    
+	    $("#lasttime").change(function(){
+    		if($('#firsttime').val() > $('#lasttime').val()) {
+    			$('#lasttime').val('');
+    			alert('다시 입력해주십시오.');
+    		}
+    	});
 	});
 </script>
+
+<script src="mainPage/ClientPro/DBjs.js"></script>
+<script src="mainPage/ClientPro/imageFile.js"></script>
 </head>
-<body>
+
+<body>	
 	<main> 
 	<span class="anchor"> <a href="#projectOutline">Information</a>
 		<a href="#goal">Goal/Scenario</a> <a href="#point">Point</a> <a
@@ -70,7 +81,7 @@
 			</div>
 			<div>
 				<label>비고</label> 
-				<input id='team' type='text' placeholder="INSERT ETC" name="etc">
+				<input id='etc' type='text' placeholder="INSERT ETC" name="etc">
 			</div>
 		</div>
 		<div id="outline_img">
@@ -78,7 +89,7 @@
 	            <label>대표 이미지</label>
 	        </div>
 	        <div>
-				<input type="image" placeholder="INSERT IMAGE" name="pjimage">
+				<input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
 			</div>
 		</div>
 		<div id="outline_expl" style="display: inline-block; width: 500px;">
@@ -86,7 +97,7 @@
 				<label>프로젝트 설명</label>
 			</div>
 			<div>
-				<textarea id='explain' cols='80' rows='15' placeholder="INSERT EXPLAIN" name="explain"></textarea>
+				<textarea id='explain' cols='80' rows='11' placeholder="INSERT EXPLAIN" name="explain"></textarea>
 			</div>
 		</div>
 	</div>
@@ -105,7 +116,7 @@
 				<label>시나리오</label>
 			</div>
 			<div>
-				<textarea id='scenario' cols='70' rows='12' placeholder="INSERT SCENARIO" name="scenario"></textarea>
+				<textarea id='scenario' cols='70' rows='11' placeholder="INSERT SCENARIO" name="scenario"></textarea>
 			</div>
 		</div>
 	</div>
@@ -116,7 +127,7 @@
 				<label>핵심포인트</label>
 			</div>
 			<div>
-				<textarea id='pointexplain' cols='70' rows='12' name="pointexplain"></textarea>
+				<textarea id='pointexplain' cols='70' rows='11' name="pointexplain"></textarea>
 			</div>
 		</div>
 	</div>
@@ -135,19 +146,19 @@
 			<label>공부방향</label>
 			</div>
 			<div>
-				<textarea id='studydir' cols='70' rows='10' name="studydir"></textarea>
+				<textarea id='studydir' cols='70' rows='11' name="studydir"></textarea>
 			</div>
 			<div>
 				<label style="width:400px">어려웠던 점과 그에 따른 해결방안</label>
 			</div>
 			<div>
-				<textarea id='diff' cols='70' rows='10' name="diff"></textarea>
+				<textarea id='diff' cols='70' rows='11' name="diff"></textarea>
 			</div>
 			<div>
 				<label>총 소감</label>
 			</div>
 			<div>
-				<textarea id='ending' cols='70' rows='10' name="ending"></textarea>
+				<textarea id='ending' cols='70' rows='11' name="ending"></textarea>
 			</div>
 		</div>
 		
@@ -155,5 +166,15 @@
 	</main>
 
 	<jsp:include page="portfolioWriteNav.jsp" flush="false" />
+	
+	<%
+		if((String)session.getAttribute("isMadeAlready") == "true") {
+	%>
+			<jsp:include page="../ClientPro/portfolioDBPro.jsp"></jsp:include>
+	
+			<script>output();</script>
+	<%	}
+	
+	%>
 </body>
 </html>

@@ -1,0 +1,9 @@
+
+
+function input() {
+	
+}
+
+function output() {
+	document.getElementById('pjtitle').value = 'BETIEPO';
+}

@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<script src="mainPage/ClientPro/DBjs.js"></script>
+
+<%
+	/*
+	DB 연동하는 곳 
+	
+	연동해서 각 값을 해당 자리에 넣으세요.
+	*/
+	String title;
+	String genre;
+	String start;
+	String end;
+	String use;
+	String team;
+	String github;
+	String etc;
+	String img;
+	String explain;
+	String purpose;
+	String target;
+	String scenario;
+	//...
+%>
+
+<script>input(title, genre, );</script>

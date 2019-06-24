@@ -8,7 +8,7 @@
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
 <link rel="stylesheet" href="css/reset.css?ver=1" />
-<link rel="stylesheet" href="css/formain.css?ver=1.2" />
+<link rel="stylesheet" href="css/formain.css?ver=1.2.1" />
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -19,7 +19,7 @@
 	crossorigin="anonymous"></script>
 
 <script src="mainPage/ClientPro/layerPopup.js"></script>
-
+<script src="mainPage/ClientPro/imageFile.js"></script>
 </head>
 <body>
 	<main class="cont">
@@ -52,7 +52,7 @@
 						<div style="margin-bottom: 200px">
 							<div class="lists">
 								<b>카테고리</b><br>
-								<select size="8">
+								<select size="9">
 									<option>프로젝트</option>
 									<option>외부활동</option>
 								</select>
@@ -61,13 +61,13 @@
 								<b>프로젝트 이름</b>
 								<input type="text"><br>
 								<b>대표이미지</b>
-								<input type="file">
+								<input class='image' type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
 							</div>
 						</div>
 					</div>
 
 					<div class="btn">
-						<a class="createBtn" href="portfolioForm.jsp">생성하기</a>
+						<a class="createBtn" href="mainPage/ClientPro/ListProCre.jsp">생성하기</a>
 						<a class="close" onclick="pop_close()">닫기</a>
 					</div>
 				</div>

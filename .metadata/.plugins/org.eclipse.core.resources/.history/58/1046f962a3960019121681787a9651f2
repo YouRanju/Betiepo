@@ -1,0 +1,9 @@
+var table = [];
+
+function input(title, genre, start, end, use, team, git, etc, img, exp, pur, tar, sce) {
+	
+}
+
+function output() {
+	document.getElementById('pjtitle').value = 'BETIEPO';
+}
