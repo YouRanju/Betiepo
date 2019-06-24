@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/reset.css?ver=1" />
 <link rel="stylesheet" href="css/listView.css" />
 </head>
 <body>

@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo</title>
 
-<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/reset.css?ver=1" />
 
 </head>
 <body>
@@ -24,7 +24,7 @@
 			<td colspan="2"><jsp:include page="top.jsp" flush="false" /></td>
 		</tr>
 		<tr>
-			<td valign="top"><jsp:include page="<%=contentPage%>"
+			<td valign="top" style="padding-top:35px;"><jsp:include page="<%=contentPage%>"
 					flush="false" /></td>
 		</tr>
 

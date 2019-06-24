@@ -1,0 +1,69 @@
+main { position: relative; }
+
+#projectOutline, #goal, #point, #completeImg, #thoughts {
+	height: 800px; padding: 50px 60px;
+	font-size: 14px; position: relative;
+}
+
+#projectOutline {
+	background-color: #eceaf5;
+	background-image: url('../img/info.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+}
+#goal {
+	background-color: #dcdae6;
+	background-image: url('../img/goal.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+}
+#point {
+	background-color: #eceaf5;
+	background-image: url('../img/point.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+}
+#completeImg {
+	background-color: #dcdae6;
+	background-image: url('../img/image.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+}
+#thoughts {
+	background-color: #eceaf5;
+	background-image: url('../img/thoughts.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+}
+
+#projectOutline div, #goal div, #point div, #completeImg div, #thoughts div {
+	margin: 10px 0px;
+}
+
+.anchor { position: fixed; top: 50%; right: 100px;
+	transform: translateY(-50px); 
+	display: inline-block; width: 100px;
+	line-height: 30px; }
+	
+.anchor * { display: block; color: rgb(187, 165, 166);
+	font-size: 12px; font-weight:bold; text-align: right;}
+	
+label { display:inline-block; width: 150px; }
+#projectOutline input, #goal input, #point input,
+#completeImg input, #thoughts input { width: 220px;
+	padding: 2px; margin-bottom: 7px;}
+#projectOutline input[type='date'] { width: 96px;}
+
+#projectOutline textarea, #goal textarea, #point textarea,
+#completeImg textarea, #thoughts textarea { width: 780px;}
+
+#outline_info { position: absolute; top: 17%; left: 42%;}
+#outline_img { position: absolute; top: 17%; left: 65%; }
+#outline_expl { position: absolute; top: 53%; left: 42%; }
+
+#goal_info { position: absolute; top: 17%; left: 42%; }

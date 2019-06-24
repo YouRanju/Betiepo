@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/reset.css?ver=1" />
 <link rel="stylesheet" href="css/indexList.css" />
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"

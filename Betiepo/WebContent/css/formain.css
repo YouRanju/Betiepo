@@ -83,7 +83,7 @@ input[class = "search"]:focus {
 .lists>select:focus {outline: none;}
 .lists>select option {margin: 2px;}
 
-.infomationNew>input {margin-bottom: 20px;}
+.infomationNew>input {margin-bottom: 5px;}
 
 .lists>select, .infomationNew>input {
 	margin-top : 8px; width:100%; font-size: 12px; 

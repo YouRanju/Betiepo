@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="../img/logo.png">
 <title>Betiepo-SignUp</title>
 
-<link rel="stylesheet" href="../../css/reset.css" />
+<link rel="stylesheet" href="../../css/reset.css?ver=1" />
 <link rel="stylesheet" href="../../css/signup.css" />
 </head>
 <body>

@@ -7,8 +7,8 @@
 <meta name="viewport"
 	content="width=device-width, height=device-height, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/formain.css?ver=1.1" />
+<link rel="stylesheet" href="css/reset.css?ver=1" />
+<link rel="stylesheet" href="css/formain.css?ver=1.2" />
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -62,8 +62,8 @@
 							<div class="infomationNew">
 								<b>프로젝트 이름</b>
 								<input type="text"><br>
-								<b>사용 언어</b>
-								<input type="text">
+								<b>대표이미지</b>
+								<input type="file">
 							</div>
 						</div>
 					</div>

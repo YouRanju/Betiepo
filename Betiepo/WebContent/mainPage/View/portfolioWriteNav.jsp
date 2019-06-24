@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/reset.css?ver=1" />
 <style>
 a { color: inherit; }
 
@@ -81,7 +81,7 @@ a { color: inherit; }
    margin: auto;
    position: fixed;
    bottom: 12%;
-   right: 10%;
+   right: 5%;
    width: 80px;
    height: 80px;
    text-align: center;
