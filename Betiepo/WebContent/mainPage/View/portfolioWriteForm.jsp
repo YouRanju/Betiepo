@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css?ver=1" />
-<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.8" />
+<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.9" />
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -37,7 +37,7 @@
     			$('#lasttime').val('');
     			alert('다시 입력해주십시오.');
     		}
-    	});
+    	});  
 	});
 </script>
 
@@ -118,6 +118,12 @@
 			<div>
 				<textarea id='scenario' cols='70' rows='11' placeholder="INSERT SCENARIO" name="scenario"></textarea>
 			</div>
+			
+			<div class="sce-img">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			</div>
 		</div>
 	</div>
 
@@ -146,19 +152,19 @@
 			<label>공부방향</label>
 			</div>
 			<div>
-				<textarea id='studydir' cols='70' rows='11' name="studydir"></textarea>
+				<textarea id='studydir' cols='70' rows='7' name="studydir"></textarea>
 			</div>
 			<div>
 				<label style="width:400px">어려웠던 점과 그에 따른 해결방안</label>
 			</div>
 			<div>
-				<textarea id='diff' cols='70' rows='11' name="diff"></textarea>
+				<textarea id='diff' cols='70' rows='7' name="diff"></textarea>
 			</div>
 			<div>
 				<label>총 소감</label>
 			</div>
 			<div>
-				<textarea id='ending' cols='70' rows='11' name="ending"></textarea>
+				<textarea id='ending' cols='70' rows='7' name="ending"></textarea>
 			</div>
 		</div>
 		
@@ -170,7 +176,7 @@
 	<%
 		if((String)session.getAttribute("isMadeAlready") == "true") {
 	%>
-			<jsp:include page="../ClientPro/portfolioDBPro.jsp"></jsp:include>
+			<jsp:include page="../Pro/portfolioDBPro.jsp"></jsp:include>
 	
 			<script>output();</script>
 	<%	}

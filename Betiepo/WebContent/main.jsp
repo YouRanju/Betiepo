@@ -3,7 +3,7 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 
-	//session.setMaxInactiveInterval(100); 
+	session.setMaxInactiveInterval(24*60*60); 
 	
 	
 	//로그인 X

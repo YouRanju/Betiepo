@@ -7,3 +7,11 @@
 1561393017752	Move 'ListPro.jsp' to 'ClientPro'
 1561393424896	Delete element
 1561393453736	Move 'ListPro.jsp' to 'Pro'
+1561417533036	Delete element
+1561419177826	Move 'SavePro.jsp' to 'Pro'
+1561419179233	Move 'portfolioDBPro.jsp' to 'Pro'
+1561419181257	Move 'makePofol.jsp' to 'Pro'
+1561419185974	Move 'deletePofol.jsp' to 'Pro'
+1561419229719	Rename resource 'makePofol.jsp'
+1561419235025	Rename resource 'deletePofol.jsp'
+1561422464589	Rename resource 'myProjectForm.jsp'

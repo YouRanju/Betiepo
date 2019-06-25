@@ -90,7 +90,8 @@ input[class = "search"]:focus {
 	padding: 3px; color: #5d5d5d;
 }
 
-.image { height: 90px}
+.image { height: 90px; }
+
 
 /* media query */
 @media (max-width: 1700px) {

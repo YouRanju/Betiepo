@@ -263,7 +263,6 @@ a { color: inherit; }
 </style>
 </head>
 <body>
-	
 	<nav class="menu">
 		<input type="checkbox" href="#" class="menu-open" 
 			name="menu-open" id="menu-open" /> 
@@ -272,11 +271,11 @@ a { color: inherit; }
 			<span class="lines line-2"></span>
 			<span class="lines line-3"></span>
 		</label> 
-		<a href="#" class="menu-item green" title="저장"> <i class="fas fa-save"></i></a>
-		<a href="#" class="menu-item lightblue" title="포트폴리오로 만들기"> <i class="fas fa-file-pdf"></i></a>
-		<a href="#" class="menu-item red" title="닫기"> <i class="fas fa-times"></i></a> 
-		<a href="#" class="menu-item orange" title="즐겨찾기"> <i class="fa fa-star"></i></a> 
-		<a href="#" class="menu-item purple" title="내용추가하기"> <i class="fas fa-plus"></i></a>
+		<a href="mainPage/Pro/SavePro.jsp" class="menu-item green" title="저장"> <i class="fas fa-save"></i></a>
+		<a href="makePofolForm.jsp" class="menu-item lightblue" title="포트폴리오로 만들기"> <i class="fas fa-file-pdf"></i></a>
+		<a href="mainPage/Pro/deletePofolPro.jsp" class="menu-item red" title="삭제"><i class="far fa-trash-alt"></i></a> 
+		<a href="mainPage/Pro/starPro.jsp" class="menu-item orange" title="즐겨찾기"> <i class="fa fa-star"></i></a> 
+		<a href="mainPage/Pro/AddContentsPro.jsp" class="menu-item purple" title="내용추가하기"><i class="fas fa-plus"></i></a>
 	</nav>
 </body>
 </html>

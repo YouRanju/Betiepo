@@ -101,3 +101,5 @@ label { display:inline-block; width: 150px; }
 #img_info { position: absolute; top: 17%; left: 42%; }
 
 #thoughts_info { position: absolute; top: 17%; left: 42%; }
+
+#goal_info input[type='image'] { border: 0; width: 240px; height: 180px; margin:7px;}
