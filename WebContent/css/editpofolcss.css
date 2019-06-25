@@ -1,0 +1,44 @@
+#wrapper .d1 { height: 840px; }
+
+.titlepage {
+	background-image: url('../img/template/temp1/1.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%, 100%;
+    max-width:100%;
+}
+.indexpage {
+	background-image: url('../img/template/temp1/2.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%, 100%;
+    max-width:100%;
+}
+.profilepage {
+	background-image: url('../img/template/temp1/3.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%, 100%;
+    max-width:100%;
+}
+.separpage {
+	background-image: url('../img/template/temp1/4.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%, 100%;
+    max-width:100%;
+}
+.portfoliopage {
+	background-image: url('../img/template/temp1/5.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%, 100%;
+    max-width:100%;
+}
+.endpage {
+	background-image: url('../img/template/temp1/6.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%, 100%;
+    max-width:100%;
+}
