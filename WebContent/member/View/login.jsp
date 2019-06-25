@@ -20,8 +20,7 @@
 			<div class="image">
 				<img src="../../img/logo.png">
 			</div>
-			<div class="text title" style="color: white; font-weight: bold;">
-				BETIEPO</div>
+			<a href="login.jsp"><div class="text title" style="color: white; font-weight: bold;">BETIEPO</div></a>
 			<div class="text summary">채우기만 해도 완성되는 포트폴리오</div>
 			<form action="../Pro/loginProc.jsp" method="POST" class="login">
 				<label>이메일</label> <input name='email' type="email"

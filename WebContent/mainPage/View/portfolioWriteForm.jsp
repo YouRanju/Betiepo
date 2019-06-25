@@ -10,12 +10,16 @@
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css?ver=1" />
-<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.5" />
+<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.14" />
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   
+<link rel="stylesheet" type="text/css" href="slick/slick.css?ver=1.1.1"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css?ver=1.1.1"/>
+<script type="text/javascript" src="slick/slick.min.js?ver=1"></script>
+				  
 <script>
 	$(document).ready(function() {
 		$('#projectOutline').animate({'opacity':'1','margin-left':'0px'},1000);
@@ -31,25 +35,52 @@
 	            
 	        }); 
 	    });
+	    
+	    $("#lasttime").change(function(){
+    		if($('#firsttime').val() > $('#lasttime').val()) {
+    			$('#lasttime').val('');
+    			alert('다시 입력해주십시오.');
+    		}
+    	});  
+	    
+	    $('.comple-img').slick();
+		
+	    slideIndex = 1;
+	    
+		$('.addimg').on('click', function() {
+			slideIndex++;
+			$('.comple-img').slick('slickAdd', '<input class="imgs" type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">');
+		});
+		
+		$('.removeimg').on('click', function() {
+			$('.comple-img').slick('slickRemove', slideIndex - 1);
+			if(slideIndex !== 0) {
+				slideIndex--;
+			}
+		});
 	});
+	
+	
 
-
+	
 </script>
+
+<script src="mainPage/ClientPro/DBjs.js"></script>
+<script src="mainPage/ClientPro/imageFile.js"></script>
 </head>
-<body>
+
+<body>	
 	<main> 
 	<span class="anchor"> <a href="#projectOutline">Information</a>
 		<a href="#goal">Goal/Scenario</a> <a href="#point">Point</a> <a
 		href="#completeImg">Complete Image</a> <a href="#thoughts">Thoughts</a>
 	</span>
-	<form action="portfolioWriteFormProc.jsp" method="post">
+
 	<div id="projectOutline" class="fadeinleft">
 		<div id="outline_info" style="display: inline-block; width: 650px;">
-		
 			<div>
 				<label>프로젝트 제목</label> 
-				<% String projectName = request.getParameter("projectName"); %>
-				<input id="pjtitle" type='text' name="pjtitle" value="<%= projectName %>" placeholder="INSERT TITLE">
+				<input id="pjtitle" type='text' name="pjtitle" placeholder="INSERT TITLE">
 			</div>
 			<div>
 				<label>프로젝트 장르</label> 
@@ -74,7 +105,7 @@
 			</div>
 			<div>
 				<label>비고</label> 
-				<input id='team' type='text' placeholder="INSERT ETC" name="etc">
+				<input id='etc' type='text' placeholder="INSERT ETC" name="etc">
 			</div>
 		</div>
 		<div id="outline_img">
@@ -82,7 +113,7 @@
 	            <label>대표 이미지</label>
 	        </div>
 	        <div>
-				<input type="image" placeholder="INSERT IMAGE" name="pjimage">
+				<input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
 			</div>
 		</div>
 		<div id="outline_expl" style="display: inline-block; width: 500px;">
@@ -90,7 +121,7 @@
 				<label>프로젝트 설명</label>
 			</div>
 			<div>
-				<textarea id='explain' cols='80' rows='15' placeholder="INSERT EXPLAIN" name="explain"></textarea>
+				<textarea id='explain' cols='80' rows='11' placeholder="INSERT EXPLAIN" name="explain"></textarea>
 			</div>
 		</div>
 	</div>
@@ -109,7 +140,13 @@
 				<label>시나리오</label>
 			</div>
 			<div>
-				<textarea id='scenario' cols='70' rows='12' placeholder="INSERT SCENARIO" name="scenario"></textarea>
+				<textarea id='scenario' cols='70' rows='11' placeholder="INSERT SCENARIO" name="scenario"></textarea>
+			</div>
+			
+			<div class="sce-img">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
 			</div>
 		</div>
 	</div>
@@ -117,10 +154,13 @@
 	<div id="point" class = 'fadeinleft'>
 		<div id="point_info">
 			<div>
-				<label>핵심포인트</label>
+				<label>구현-핵심포인트</label>
 			</div>
+			<div class="point-img">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			 </div>
 			<div>
-				<textarea id='pointexplain' cols='70' rows='12' name="pointexplain"></textarea>
+				<textarea id='pointexplain' cols='30' rows='28' name="pointexplain" placeholder="INSERT EXPLAIN"></textarea>
 			</div>
 		</div>
 	</div>
@@ -129,36 +169,50 @@
 		<div id="img_info">
 			<div>
 				<label>완성이미지</label>
+				<input type = 'button' value = '이미지 추가하기' class="addimg">
+				<input type = 'button' value = '최근 이미지 삭제하기' class="removeimg">
+			</div>
+			<div class="comple-img">
+			  <input class="imgs" type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
 			</div>
 		</div>
 	</div>
-	
+
 	<div id="thoughts" class = 'fadeinleft'>
 		<div id="thoughts_info">
 			<div>
 			<label>공부방향</label>
 			</div>
 			<div>
-				<textarea id='studydir' cols='70' rows='10' name="studydir"></textarea>
+				<textarea id='studydir' cols='70' rows='7' name="studydir"></textarea>
 			</div>
 			<div>
 				<label style="width:400px">어려웠던 점과 그에 따른 해결방안</label>
 			</div>
 			<div>
-				<textarea id='diff' cols='70' rows='10' name="diff"></textarea>
+				<textarea id='diff' cols='70' rows='7' name="diff"></textarea>
 			</div>
 			<div>
 				<label>총 소감</label>
 			</div>
 			<div>
-				<textarea id='ending' cols='70' rows='10' name="ending"></textarea>
+				<textarea id='ending' cols='70' rows='7' name="ending"></textarea>
 			</div>
 		</div>
 		
 	</div>
-	</form>
 	</main>
 
 	<jsp:include page="portfolioWriteNav.jsp" flush="false" />
+	
+	<%
+		if((String)session.getAttribute("isMadeAlready") == "true") {
+	%>
+			<jsp:include page="../Pro/portfolioDBPro.jsp"></jsp:include>
+	
+			<script>output();</script>
+	<%	}
+	
+	%>
 </body>
 </html>

@@ -17,22 +17,15 @@
 <%
 	PrintWriter script = response.getWriter();
 	script.println("<script>");
-	String isLogin = null;
-	if(session.getAttribute("isLogin") != null){
-		isLogin = (String) session.getAttribute("isLogin");
-	}
-	if(isLogin != null) {
-		script.println("alert('이미 로그인이 되어있습니다.')");
-	}
-	else {
-		UserDAO userDAO = new UserDAO();
-		int result = userDAO.join(user);
+
+	UserDAO userDAO = new UserDAO();
+	int result = userDAO.join(user);
+	
+	if(result == -1)
+		script.println("alert('이미 존재하는 이메일입니다.')");
+	else 
+		script.println("alert('회원가입을 축하합니다.')");
 		
-		if(result == -1)
-			script.println("alert('이미 존재하는 이메일입니다.')");
-		else 
-			script.println("alert('회원가입을 축하합니다.')");
-	}
 	script.println("location.href='../../main.jsp'");
 	script.println("</script>");
 %>

@@ -30,7 +30,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>BETIEPO</h1>
+		<a href="login.jsp"><h1>BETIEPO</h1></a>
 		<form action="../Pro/signUpProc.jsp" method="Post">
 			<label>이름</label> <span>이 이름은 마이페이지에서 변경하실 수 있습니다.</span> 
 			<input type="text" placeholder="이름을 입력해 주세요." name='name' required> <br> 
@@ -47,6 +47,5 @@
 			<input type="submit" value="회원가입">
 		</form>
 	</div>
-
 </body>
 </html>

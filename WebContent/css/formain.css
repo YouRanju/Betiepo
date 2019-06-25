@@ -86,9 +86,12 @@ input[class = "search"]:focus {
 .infomationNew>input {margin-bottom: 5px;}
 
 .lists>select, .infomationNew>input {
-	margin-top : 8px; width:100%; font-size: 12px; 
+	margin-top : 8px; width:160px; font-size: 12px; 
 	padding: 3px; color: #5d5d5d;
 }
+
+.image { height: 90px; }
+
 
 /* media query */
 @media (max-width: 1700px) {
