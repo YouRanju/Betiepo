@@ -73,14 +73,14 @@ main { position: relative; }
 
 label { display:inline-block; width: 150px; }
 #projectOutline input, #goal input, #point input,
-#completeImg input, #thoughts input { width: 220px;
+#thoughts input { width: 220px;
 	padding: 2px; margin-bottom: 10px; border: 0;
 	border-bottom: 1px solid gray; color: #3d3d3d;
 	font-size: 16px; font-weight: bolder;}
 #projectOutline input::placeholder, #goal input::placeholder 
 { font-style:oblique; font-weight:bold; font-size: 14px; }
 #projectOutline input[type='date'] { width: 96px; font-size: 10px;}
-#projectOutline input[type='image'] { border: 0; width: 350px; height: 280px}
+#projectOutline input[type='image'], #projectOutline input[type='file'] { border: 0; width: 350px; height: 280px}
 
 #projectOutline textarea, #goal textarea, #point textarea,
 #completeImg textarea, #thoughts textarea { width: 780px; 
@@ -95,11 +95,17 @@ label { display:inline-block; width: 150px; }
 #outline_expl { position: absolute; top: 52%; left: 42%; }
 
 #goal_info { position: absolute; top: 17%; left: 42%; }
+#goal_info input[type='image'], #goal_info input[type='file'] { border: 0; width: 240px; height: 180px; margin:7px;}
 
 #point_info { position: absolute; top: 17%; left: 42%; }
+#point_info input[type='image'], #point_info input[type='file'] { float:left; border: 0; width: 380px; height: 520px; margin:7px; }
+#point_info textarea { position:absolute; width: 380px;}
 
 #img_info { position: absolute; top: 17%; left: 42%; }
+.comple-img, input[type='file'] { margin: 0 20px; width: 780px; height: 500px; }
+#completeImg input { width: 180px;
+	padding: 5px; margin: 0 10px; border: 0; color: #3d3d3d;
+	font-size: 14px; font-weight: bolder; }
 
 #thoughts_info { position: absolute; top: 17%; left: 42%; }
 
-#goal_info input[type='image'] { border: 0; width: 240px; height: 180px; margin:7px;}

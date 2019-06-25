@@ -10,12 +10,16 @@
 <link rel="shortcut icon" href="img/logo.png">
 <title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css?ver=1" />
-<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.9" />
+<link rel="stylesheet" href="css/projectWrite.css?ver=1.1.14" />
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   
+<link rel="stylesheet" type="text/css" href="slick/slick.css?ver=1.1.1"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css?ver=1.1.1"/>
+<script type="text/javascript" src="slick/slick.min.js?ver=1"></script>
+				  
 <script>
 	$(document).ready(function() {
 		$('#projectOutline').animate({'opacity':'1','margin-left':'0px'},1000);
@@ -38,7 +42,27 @@
     			alert('다시 입력해주십시오.');
     		}
     	});  
+	    
+	    $('.comple-img').slick();
+		
+	    slideIndex = 1;
+	    
+		$('.addimg').on('click', function() {
+			slideIndex++;
+			$('.comple-img').slick('slickAdd', '<input class="imgs" type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">');
+		});
+		
+		$('.removeimg').on('click', function() {
+			$('.comple-img').slick('slickRemove', slideIndex - 1);
+			if(slideIndex !== 0) {
+				slideIndex--;
+			}
+		});
 	});
+	
+	
+
+	
 </script>
 
 <script src="mainPage/ClientPro/DBjs.js"></script>
@@ -130,10 +154,13 @@
 	<div id="point" class = 'fadeinleft'>
 		<div id="point_info">
 			<div>
-				<label>핵심포인트</label>
+				<label>구현-핵심포인트</label>
 			</div>
+			<div class="point-img">
+			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			 </div>
 			<div>
-				<textarea id='pointexplain' cols='70' rows='11' name="pointexplain"></textarea>
+				<textarea id='pointexplain' cols='30' rows='28' name="pointexplain" placeholder="INSERT EXPLAIN"></textarea>
 			</div>
 		</div>
 	</div>
@@ -142,6 +169,11 @@
 		<div id="img_info">
 			<div>
 				<label>완성이미지</label>
+				<input type = 'button' value = '이미지 추가하기' class="addimg">
+				<input type = 'button' value = '최근 이미지 삭제하기' class="removeimg">
+			</div>
+			<div class="comple-img">
+			  <input class="imgs" type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
 			</div>
 		</div>
 	</div>

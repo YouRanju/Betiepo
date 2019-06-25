@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap');
+
+main { position: relative; }
+
+.anchor { position: fixed; top: 50%; left: 100px;
+	transform: translateY(-50px); 
+	display: inline-block; width: 100px;
+	line-height: 30px; z-index:9999;}
+	
+.anchor * { display: block; color: #4d3333;
+	font-size: 12px; font-weight:bold; text-align: left;}
+	
+#projectOutline, #goal, #point, #completeImg, #thoughts {
+	height: 800px; padding: 50px 60px;
+	font-size: 16px; position: relative;
+	font-family: 'Black Han Sans', sans-serif;
+}
+
+#projectOutline {
+	background-color: #f7f5f5;
+	background-image: url('../img/info.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+	opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
+}
+#goal {
+	background-color: #eeeded;
+	background-image: url('../img/goal.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+	opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
+}
+#point {
+	background-color: #f7f5f5;
+	background-image: url('../img/point.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+	opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
+}
+#completeImg {
+	background-color: #eeeded;
+	background-image: url('../img/image.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+	opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
+}
+#thoughts {
+	background-color: #f7f5f5;
+	background-image: url('../img/thoughts.png?ver=1');
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: 50%, 100%;
+	opacity:0;
+    margin-left:-300px;    
+    max-width:100%;
+}
+
+#projectOutline div, #goal div, #point div, #completeImg div, #thoughts div {
+	margin: 10px 0px; 
+}
+
+label { display:inline-block; width: 150px; }
+#projectOutline input, #goal input, #point input,
+#completeImg input, #thoughts input { width: 220px;
+	padding: 2px; margin-bottom: 10px; border: 0;
+	border-bottom: 1px solid gray; color: #3d3d3d;
+	font-size: 16px; font-weight: bolder;}
+#projectOutline input::placeholder, #goal input::placeholder 
+{ font-style:oblique; font-weight:bold; font-size: 14px; }
+#projectOutline input[type='date'] { width: 96px; font-size: 10px;}
+#projectOutline input[type='image'] { border: 0; width: 350px; height: 280px}
+
+#projectOutline textarea, #goal textarea, #point textarea,
+#completeImg textarea, #thoughts textarea { width: 780px; 
+	padding: 4px; color: #3d3d3d; font-size: 16px; font-weight: bolder;}
+#projectOutline textarea::placeholder, #goal textarea::placeholder,
+#point textarea::placeholder, #completeImg textarea::placeholder, 
+#thoughts textarea::placeholder { font-style:oblique; font-weight:bold; 
+	font-size: 14px;}
+
+#outline_info { position: absolute; top: 17%; left: 42%;}
+#outline_img { position: absolute; top: 17%; left: 65%; }
+#outline_expl { position: absolute; top: 52%; left: 42%; }
+
+#goal_info { position: absolute; top: 17%; left: 42%; }
+
+#point_info { position: absolute; top: 17%; left: 42%; }
+
+#img_info { position: absolute; top: 17%; left: 42%; }
+
+#thoughts_info { position: absolute; top: 17%; left: 42%; }
+
+#goal_info input[type='image'] { border: 0; width: 240px; height: 180px; margin:7px;}
