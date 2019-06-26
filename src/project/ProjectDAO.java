@@ -24,37 +24,6 @@ public class ProjectDAO {
 		}
 	}
 	
-	/*
-	public String getDate() {
-		String SQL = "SELECT NOW()";
-		try {
-			PreparedStatement pstmt = conn.prepareStatement(SQL);
-			rs = pstmt.executeQuery();
-			if(rs.next()) {
-				return rs.getString(1);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return ""; // DB error
-	}
-	
-	public int getNext() {
-		String SQL = "SELECT projectId FROM project ORDER BY projectId DESC";
-		try {
-			PreparedStatement pstmt = conn.prepareStatement(SQL);
-			rs = pstmt.executeQuery();
-			if(rs.next()) {
-				return rs.getInt(1) + 1;
-			}
-			return 1; // first project
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return -1; // DB error
-	}
-	*/
-	
 	public int write(Project project) {
 		
 		String SQL = "INSERT INTO project(userEmail, title";

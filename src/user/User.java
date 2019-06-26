@@ -4,8 +4,6 @@ public class User {
 	private String name;
 	private String email;
 	private String pw;
-	private String emailHash;
-	private boolean emailChecked;
 	
 	public String getName() {
 		return name;
@@ -24,18 +22,6 @@ public class User {
 	}
 	public void setPw(String pw) {
 		this.pw = pw;
-	}
-	public String getEmailHash() {
-		return emailHash;
-	}
-	public void setEmailHash(String emailHash) {
-		this.emailHash = emailHash;
-	}
-	public boolean isEmailChecked() {
-		return emailChecked;
-	}
-	public void setEmailChecked(boolean emailChecked) {
-		this.emailChecked = emailChecked;
 	}
 
 }
