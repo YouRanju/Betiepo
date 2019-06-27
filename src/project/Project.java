@@ -25,6 +25,45 @@ public class Project {
 	private String study;
 	private String problem;
 	private String realization;
+	
+	public Project() {
+		super();
+	}
+	
+	public Project(String userEmail, String title, String genre, String startDate, String endDate,
+			String language, String charge, String github, String memo, String explanation, String image,
+			String purpose, String target, String scenario, String design1, String design2, String design3,
+			String implementImg, String implementExp, String completeImg, String study, String problem,
+			String realization) {
+		super();
+		this.projectId = projectId;
+		this.userEmail = userEmail;
+		this.title = title;
+		this.genre = genre;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.language = language;
+		this.charge = charge;
+		this.github = github;
+		this.memo = memo;
+		this.explanation = explanation;
+		this.image = image;
+		this.purpose = purpose;
+		this.target = target;
+		this.scenario = scenario;
+		this.design1 = design1;
+		this.design2 = design2;
+		this.design3 = design3;
+		this.implementImg = implementImg;
+		this.implementExp = implementExp;
+		this.completeImg = completeImg;
+		this.study = study;
+		this.problem = problem;
+		this.realization = realization;
+	}
+
+
+
 	public int getProjectId() {
 		return projectId;
 	}

@@ -58,4 +58,20 @@ public class UserDAO {
 		}
 		return -1; // DB error
 	}
+	
+	public String getUserName(String email) {
+		String SQL = "SELECT name FROM member WHERE email = ?";
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			pstmt.setString(1, email);
+			rs = pstmt.executeQuery();
+			if(rs.next())
+			{
+				return rs.getString(1); // find name
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null; // db error
+	}
 }

@@ -15,8 +15,8 @@
 
 	switch(result) {
 	case 1: // success login
-		session.setAttribute("isLogin", email); //이거 메일 말고 이름
-		session.setAttribute("LoginEmail", email);
+		session.setAttribute("isLogin", userDAO.getUserName(email)); 
+		session.setAttribute("userEmail", email);
 		break;
 	case 0: // does not correct pw
 		script.println("alert('비밀번호를 잘못 입력 하셨습니다. 다시 확인해 주십시오.')");

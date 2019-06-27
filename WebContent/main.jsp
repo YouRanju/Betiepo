@@ -15,7 +15,7 @@
 	session.invalidate();
 	<jsp:forward page="template/template.jsp">
 		<jsp:param name="CONTENTPAGE" value="../mainPage/View/index.jsp"/>
-	</jsp:forward>		
+	</jsp:forward>
 <%	}
 	
 %>

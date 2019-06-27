@@ -11,6 +11,7 @@
 <title>Betiepo_Create</title>
 <link rel="stylesheet" href="css/reset.css?ver=1" />
 <link rel="stylesheet" href="css/projectWrite.css?ver=1.1.14" />
+<link rel="stylesheet" href="css/PortfolioWriteNav.css" />
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -70,6 +71,7 @@
 </head>
 
 <body>	
+<form action="mainPage/Pro/SavePro.jsp" method="post" name="form">
 	<main> 
 	<span class="anchor"> <a href="#projectOutline">Information</a>
 		<a href="#goal">Goal/Scenario</a> <a href="#point">Point</a> <a
@@ -80,7 +82,7 @@
 		<div id="outline_info" style="display: inline-block; width: 650px;">
 			<div>
 				<label>프로젝트 제목</label> 
-				<input id="pjtitle" type='text' name="pjtitle" placeholder="INSERT TITLE">
+				<input id="pjtitle" type='text' value="hello" name="pjtitle" placeholder="INSERT TITLE">
 			</div>
 			<div>
 				<label>프로젝트 장르</label> 
@@ -144,9 +146,9 @@
 			</div>
 			
 			<div class="sce-img">
-			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
-			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
-			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage1" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage2" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage3" onclick = "b(event)" onchange="img()">
 			</div>
 		</div>
 	</div>
@@ -157,7 +159,7 @@
 				<label>구현-핵심포인트</label>
 			</div>
 			<div class="point-img">
-			  <input type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			  <input type="image" src = "img/create.png" name="pjimage4" onclick = "b(event)" onchange="img()">
 			 </div>
 			<div>
 				<textarea id='pointexplain' cols='30' rows='28' name="pointexplain" placeholder="INSERT EXPLAIN"></textarea>
@@ -173,7 +175,7 @@
 				<input type = 'button' value = '최근 이미지 삭제하기' class="removeimg">
 			</div>
 			<div class="comple-img">
-			  <input class="imgs" type="image" src = "img/create.png" name="pjimage" onclick = "b(event)" onchange="img()">
+			  <input class="imgs" type="image" src = "img/create.png" name="pjimage5" onclick = "b(event)" onchange="img()">
 			</div>
 		</div>
 	</div>
@@ -202,17 +204,31 @@
 		
 	</div>
 	</main>
+	<!-- <jsp:include page="portfolioWriteNav.jsp" flush="false" />-->
+	
+	<nav class="menu">
+		<input type="checkbox" href="#" class="menu-open" 
+			name="menu-open" id="menu-open" /> 
+		<label class="menu-open-button" for="menu-open">
+			<span class="lines line-1"></span>
+			<span class="lines line-2"></span>
+			<span class="lines line-3"></span>
+		</label>
+		<a class="menu-item green" onclick="document.form.submit();" title="저장"><i class="fas fa-save"></i></a>
+		<!-- <a href="mainPage/Pro/SavePro.jsp" class="menu-item green" title="저장"><i class="fas fa-save"></i></a> -->
+		<a href="makePofolForm.jsp" class="menu-item lightblue" title="포트폴리오로 만들기"> <i class="fas fa-file-pdf"></i></a>
+		<a href="mainPage/Pro/deletePofolPro.jsp" class="menu-item red" title="삭제"><i class="far fa-trash-alt"></i></a> 
+		<a href="mainPage/Pro/starPro.jsp" class="menu-item orange" title="즐겨찾기"> <i class="fa fa-star"></i></a> 
+		<a href="mainPage/Pro/AddContentsPro.jsp" class="menu-item purple" title="내용추가하기"><i class="fas fa-plus"></i></a>
+	</nav>
+<%
+	if((String)session.getAttribute("isMadeAlready") == "true") {
+%>
+		<jsp:include page="../Pro/portfolioDBPro.jsp"></jsp:include>
 
-	<jsp:include page="portfolioWriteNav.jsp" flush="false" />
-	
-	<%
-		if((String)session.getAttribute("isMadeAlready") == "true") {
-	%>
-			<jsp:include page="../Pro/portfolioDBPro.jsp"></jsp:include>
-	
-			<script>output();</script>
-	<%	}
-	
-	%>
+		<script>output();</script>
+<%	}
+%>
+</form>
 </body>
 </html>
